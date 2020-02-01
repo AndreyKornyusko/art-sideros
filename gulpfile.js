@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 
 const tasks = requireDir('./gulp/tasks', { recurse: true });
 const paths = require('./gulp/paths');
-
+ 
 const serve = () => {
   return browserSync.init({
     server: 'build',
@@ -32,7 +32,7 @@ const watcher = done => {
 
   done();
 };
-
+ 
 exports.start = series(
   tasks.clean,
   tasks.images,

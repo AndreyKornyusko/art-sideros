@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
-    <!-- Сюда будет всталена ссылка на файл стилей -->
-    <!-- inject:css -->
-    <!-- endinject -->
+    <title>Арт-сидерос</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <div class="main-wrapper">
       <header>
         <div class="content-wrapper">
-          <div class="header__logo-wrap">
-            <a href="#">
-              <span>арт</span>
-              <span>сидерос</span>
-              <span>изготовление кованых и сварных изделий</span>
-            </a>
-          </div>
-          <div class="header__schedule-wrap">
-            <div class="header__shedule-img-wrap">
-              <img src="" alt="календарь">
+          <div class="header__main-content-wrap">
+            <div class="header__logo-wrap">
+              <a class="header__logo-link" href="#">
+                <span class="header__logo-art">арт</span>
+                <span class="header__logo-sideros">сидерос</span>
+                <span class="header__logo-make"
+                  >изготовление кованых и сварных изделий</span
+                >
+              </a>
             </div>
-            <div class="header__shedule-text">Ежедневно 8:00 - 18:00</div>
+            <div class="header__schedule-wrap">
+              <div class="header__shedule-img-wrap">
+                <img
+                  class="header__shedule-img"
+                  src="./images/month.png"
+                  alt="календарь"
+                />
+              </div>
+              <div class="header__shedule-text">Ежедневно 8:00 - 18:00</div>
+            </div>
+            <div class="header__buttons-wrap">
+              <button class="header__button">Оставить заявку</button>
+              <button class="header__button">рассчитать заказ</button>
+            </div>
+            <div class="header__contact-wrap">
+              <a class="header__contact-wrap-tel" href="tel:+79090702348"
+                >+7 909 070-23-48</a
+              >
+              <span class="header__contact-wrap-span">или</span>
+              <a class="header__contact-wrap-call" href="#">Позвоните мне</a>
+              <a
+                class="header__contact-wrap-email"
+                href="mailto:zakaz@domen.ru"
+              >
+                zakaz@domen.ru</a
+              >
+            </div>
           </div>
-          <div class="heder__buttons-wrap">
-            <button class="heder__button">Оставить заявку</button>
-            <button class="heder__button">рассчитать заказ</button>
+          <div class="header__nav-wrap">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-list-item">Как мы работаем</li>
+                <li class="header__nav-list-item">О нас</li>
+                <li class="header__nav-list-item">Каталог</li>
+                <li class="header__nav-list-item">Доставка и оплата</li>
+                <li class="header__nav-list-item">Отзывы</li>
+                <li class="header__nav-list-item">Контакты</li>
+              </ul>
+            </nav>
           </div>
-          <div class="header__contact-wrap"></div>
         </div>
       </header>
     </div>

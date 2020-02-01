@@ -1,0 +1,196 @@
+header {
+  position: relative;
+  width: 100%;
+}
+
+.header__main-content-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.header__logo-art {
+  display: block;
+  font-size: 50px;
+  line-height: 30px;
+  font-family: 'Brush Script MT';
+  color: $main-orange-color;
+  font-style: italic;
+}
+
+.header__logo-sideros,
+.header__logo-make {
+  font-family: 'MuseoSansCyrl';
+  color: rgb(28, 199, 209);
+  text-transform: uppercase;
+  background: linear-gradient(
+    to left,
+    rgb(28, 199, 209) 0%,
+    rgb(19, 124, 210) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+}
+
+.header__logo-sideros {
+  font-size: 60px;
+}
+
+.header__logo-make {
+  font-size: 12px;
+}
+
+.header__schedule-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 195px;
+}
+
+.header__shedule-img-wrap {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header__shedule-img {
+  width: 100%;
+  height: auto;
+}
+
+.header__shedule-text {
+  width: 135px;
+  font-size: 24px;
+  font-family: 'MuseoSansCyrl';
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.header__buttons-wrap {
+  width: 200px;
+}
+
+.header__button {
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to left,
+    rgb(28, 199, 209) 0%,
+    rgb(19, 124, 210) 100%
+  );
+  width: 229px;
+  height: 46px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'MuseoSansCyrl';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: transparent;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: rgb(28, 199, 209);
+    text-transform: uppercase;
+    background: linear-gradient(
+      to left,
+      rgb(28, 199, 209) 0%,
+      rgb(19, 124, 210) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    border-width: 2px;
+    border-color: rgb(19, 124, 210);
+    border-style: solid;
+    background-color: #fff;
+  }
+}
+
+.header__contact-wrap {
+  width: 210px;
+  text-align: right;
+}
+
+.header__contact-wrap-tel,
+.header__contact-wrap-span,
+.header__contact-wrap-call,
+.header__contact-wrap-email {
+  font-size: 24px;
+  font-family: 'MuseoSansCyrl';
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.header__contact-wrap-tel,
+.header__contact-wrap-call,
+.header__contact-wrap-email {
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header__contact-wrap-span,
+.header__contact-wrap-email {
+  font-weight: normal;
+}
+
+.header__nav-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 80px;
+  padding-left: 80px;
+  margin: 0 auto;
+  border-radius: -1px;
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 162, 88) 0%,
+    rgb(241, 117, 18) 59%
+  );
+  box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  width: 1232px;
+  height: 66px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__nav-list {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+
+.header__nav-list-item {
+  line-height: 40px;
+  list-style: none;
+  font-size: 24px;
+  font-family: 'MuseoSansCyrl';
+  color: rgb(255, 254, 254);
+}
