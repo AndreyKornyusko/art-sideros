@@ -37,8 +37,8 @@ header {
  
 .header__logo-sideros,
 .header__logo-make {
-  font-family: 'Museo Sans Cyrl';
-  font-weight: 700;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
   color: $main-light-blue-color;
   text-transform: uppercase;
   background: linear-gradient(
@@ -64,7 +64,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  width: 195px;
+  width: 200px;
 }
 
 .header__shedule-img-wrap {
@@ -79,9 +79,10 @@ header {
 }
 
 .header__shedule-text {
-  width: 135px;
+  width: 140px;
   font-size: 24px;
-  font-family: 'Museo Sans Cyrl';
+  font-family: 'MuseoSansCyrlW03-700';
+  font-weight: 700;
   color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -101,7 +102,8 @@ header {
   height: 46px;
   margin-bottom: 10px;
   font-size: 16px;
-  font-family: 'Museo Sans Cyrl';
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -141,7 +143,6 @@ header {
 .header__contact-wrap-call,
 .header__contact-wrap-email {
   font-size: 24px;
-  font-family: 'Museo Sans Cyrl';
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -149,7 +150,8 @@ header {
 .header__contact-wrap-tel,
 .header__contact-wrap-call,
 .header__contact-wrap-email {
-  font-weight: bold;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
   &:hover {
     text-decoration: underline;
   }
@@ -157,7 +159,8 @@ header {
 
 .header__contact-wrap-span,
 .header__contact-wrap-email {
-  font-weight: normal;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
 }
 
 .header__nav-wrap {
@@ -203,10 +206,12 @@ header {
   line-height: 40px;
   list-style: none;
   font-size: 24px;
-  font-family: 'Museo Sans Cyrl';
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
   color: rgb(255, 254, 254);
   &:hover {
-    font-weight: bold;
+    font-family: 'MuseoSansCyrlW03-900';
+    font-weight: 900;
     text-decoration: underline;
   }
 }

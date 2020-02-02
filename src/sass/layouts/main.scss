@@ -1,0 +1,157 @@
+.how-we-work__section-title {
+  font-size: 30px;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+
+.how-we-work__container {
+  max-width: 1276px;
+  margin: 0 auto;
+}
+
+.how-we-work {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.how-we-work__img-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.how-we-work__item-img {
+  list-style: none;
+}
+
+.how-we-work__item-img:nth-child(odd) .img-wrap::after,
+.how-we-work__item-img:nth-child(even) .img-wrap::after {
+  position: absolute;
+  content: '';
+  top: 40px;
+  right: -90px;
+  width: 56px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.how-we-work__item-img:nth-child(odd) .img-wrap::after {
+  background-image: url(../../images/Shape1.png);
+}
+
+.how-we-work__item-img:nth-child(even) .img-wrap::after {
+  background-image: url(../../images/Shape2.png);
+}
+
+.how-we-work__item-img:last-child .img-wrap::after {
+  display: none;
+  visibility: hidden;
+}
+
+.how-we-work__item-img .img-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.how-we-work__img {
+  width: 100%;
+  height: auto;
+}
+
+.how-we-work__img-description {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.about__wrapper {
+  display: flex;
+}
+
+.about__text-wrap {
+  width: 50%;
+}
+
+.about__text {
+  font-size: 20px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.about__image-wrap {
+  width: 50%;
+}
+
+.about__button {
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to left,
+    $main-light-blue-color 0%,
+    $main-dark-blue-color 100%
+  );
+  width: 274px;
+  height: 55px;
+  font-size: 16px;
+  font-family: 'MuseoSansCyrlW03-900';
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-transform: uppercase;
+  border: transparent;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $main-light-blue-color;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to left,
+      $main-light-blue-color 0%,
+      $main-dark-blue-color 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    border-width: 2px;
+    border-color: $main-dark-blue-color;
+    border-style: solid;
+    background-color: #fff;
+  }
+}
+
+.about__section-title {
+  font-size: 30px;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}

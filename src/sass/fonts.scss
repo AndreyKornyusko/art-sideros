@@ -3,22 +3,58 @@
   font-family: 'Brush Script MT';
   font-style: italic;
   font-weight: 400;
-  src: local('Brush Script MT'), 
-       url('../fonts/BrushScriptMTItalic/7655d129d0addb2f08a5c1dc994aaa4b.woff') format('woff'),
+  src: local('Brush Script MT'),
+    url('../fonts/BrushScriptMTItalic/7655d129d0addb2f08a5c1dc994aaa4b.woff')
+      format('woff');
 }
 
 /* Museo-Sans-Cyr - cyr */
+
 @font-face {
-  font-family: 'Museo Sans Cyrl';
+  font-family: 'MuseoSansCyrlW03-300';
   font-style: normal;
-  font-weight: 400;
-  src: local('Museo Sans Cyrl'), 
-       url('../fonts/Museo-Sans-Cyr/museosanscyrl/Museosanscyrl500.woff') format('woff'),
+  font-weight: 300;
+  src: url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl300.woff')
+      format('woff'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl300.woff2')
+      format('woff2'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl300.ttf')
+      format('truetype');
 }
+
 @font-face {
-  font-family: 'Museo Sans Cyrl';
-  font-style: bold;
-  font-weight: 700;
-  src: local('Museo Sans Cyrl'), 
-       url('../fonts/Museo-Sans-Cyr/museosanscyrl/MuseoSansCyrl-700.woff') format('woff'),
+  font-family: 'MuseoSansCyrlW03-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl500.woff')
+      format('woff'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl500.woff2')
+      format('woff2'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl500.ttf')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrlW03-700';
+  font-style: normal;
+    font-weight: 700;
+  src: url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl700.woff')
+      format('woff'),
+    format('woff'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl700.woff2')
+      format('woff2'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl700.ttf')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrlW03-900';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl900.woff')
+      format('woff'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl900.woff2')
+      format('woff2'),
+    url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl900.ttf')
+      format('truetype');
 }

@@ -10,7 +10,8 @@
 .banner__title {
   width: 50%;
   font-size: 65px;
-  font-family: 'Museo Sans Cyrl';
+  font-family: 'MuseoSansCyrlW03-700';
+  font-weight: 700;
   color: rgb(254, 254, 254);
   text-transform: uppercase;
   line-height: 1.154;
@@ -20,8 +21,8 @@
 
 .banner__subtitle {
   font-size: 30px;
-  font-family: 'Museo Sans Cyrl';
-  font-weight: 400;
+  font-family: 'MuseoSansCyrlW03-300';
+  font-weight: 300;
   color: rgb(254, 254, 254);
   line-height: 1.2;
   margin-bottom: 48px;
@@ -38,9 +39,9 @@
   width: 274px;
   height: 55px;
   font-size: 16px;
-  font-family: 'Museo Sans Cyrl';
+  font-family: 'MuseoSansCyrlW03-900';
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   border: transparent;
   &:active {
