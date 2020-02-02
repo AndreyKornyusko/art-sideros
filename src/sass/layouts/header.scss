@@ -1,13 +1,20 @@
 header {
   position: relative;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  height: 147px;
 }
-
+ 
 .header__main-content-wrap {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__logo-wrap {
+  position: relative;
 }
 
 .header__logo-link {
@@ -17,23 +24,27 @@ header {
 }
 
 .header__logo-art {
+  position: absolute;
+  top: -27px;
+  left: -30px;
   display: block;
   font-size: 50px;
   line-height: 30px;
   font-family: 'Brush Script MT';
-  color: $main-orange-color;
+  color: $main-dark-orange-color;
   font-style: italic;
 }
-
+ 
 .header__logo-sideros,
 .header__logo-make {
-  font-family: 'MuseoSansCyrl';
-  color: rgb(28, 199, 209);
+  font-family: 'Museo Sans Cyrl';
+  font-weight: 700;
+  color: $main-light-blue-color;
   text-transform: uppercase;
   background: linear-gradient(
     to left,
-    rgb(28, 199, 209) 0%,
-    rgb(19, 124, 210) 100%
+    $main-light-blue-color 0%,
+    $main-dark-blue-color 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -70,7 +81,7 @@ header {
 .header__shedule-text {
   width: 135px;
   font-size: 24px;
-  font-family: 'MuseoSansCyrl';
+  font-family: 'Museo Sans Cyrl';
   color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -83,14 +94,14 @@ header {
   border-radius: 8px;
   background-image: linear-gradient(
     to left,
-    rgb(28, 199, 209) 0%,
-    rgb(19, 124, 210) 100%
+    $main-light-blue-color 0%,
+    $main-dark-blue-color 100%
   );
   width: 229px;
   height: 46px;
   margin-bottom: 10px;
   font-size: 16px;
-  font-family: 'MuseoSansCyrl';
+  font-family: 'Museo Sans Cyrl';
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -102,26 +113,26 @@ header {
     outline: none;
   }
   &:hover {
-    color: rgb(28, 199, 209);
+    color: $main-light-blue-color;
     text-transform: uppercase;
     background: linear-gradient(
       to left,
-      rgb(28, 199, 209) 0%,
-      rgb(19, 124, 210) 100%
+      $main-light-blue-color 0%,
+      $main-dark-blue-color 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: table;
     border-width: 2px;
-    border-color: rgb(19, 124, 210);
+    border-color: $main-dark-blue-color;
     border-style: solid;
     background-color: #fff;
   }
 }
 
 .header__contact-wrap {
-  width: 210px;
+  width: 230px;
   text-align: right;
 }
 
@@ -130,7 +141,7 @@ header {
 .header__contact-wrap-call,
 .header__contact-wrap-email {
   font-size: 24px;
-  font-family: 'MuseoSansCyrl';
+  font-family: 'Museo Sans Cyrl';
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -150,6 +161,8 @@ header {
 }
 
 .header__nav-wrap {
+  position: absolute;
+  bottom: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,11 +172,10 @@ header {
   border-radius: -1px;
   background-image: linear-gradient(
     to top,
-    rgb(255, 162, 88) 0%,
-    rgb(241, 117, 18) 59%
+    $main-light-orange-color 0%,
+    $main-dark-orange-color 59%
   );
   box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.23);
-  position: absolute;
   width: 1232px;
   height: 66px;
 }
@@ -191,6 +203,10 @@ header {
   line-height: 40px;
   list-style: none;
   font-size: 24px;
-  font-family: 'MuseoSansCyrl';
+  font-family: 'Museo Sans Cyrl';
   color: rgb(255, 254, 254);
+  &:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }

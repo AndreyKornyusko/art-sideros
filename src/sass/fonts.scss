@@ -3,15 +3,22 @@
   font-family: 'Brush Script MT';
   font-style: italic;
   font-weight: 400;
-  src: local('Brush Script MT'), local('Brush Script MT'),
-       url('../fonts/Brush Script MT Italic.ttf') format('ttf'),
+  src: local('Brush Script MT'), 
+       url('../fonts/BrushScriptMTItalic/7655d129d0addb2f08a5c1dc994aaa4b.woff') format('woff'),
 }
 
 /* Museo-Sans-Cyr - cyr */
 @font-face {
-  font-family: 'MuseoSansCyrl';
+  font-family: 'Museo Sans Cyrl';
   font-style: normal;
   font-weight: 400;
-  src: local('MuseoSansCyrl'), local('MuseoSansCyrl'),
-       url('../fonts/Museo-Sans-Cyr/Museo-Sans-Cyr/MuseoSansCyrl.otf') format('otf'),
+  src: local('Museo Sans Cyrl'), 
+       url('../fonts/Museo-Sans-Cyr/museosanscyrl/Museosanscyrl500.woff') format('woff'),
+}
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Museo Sans Cyrl'), 
+       url('../fonts/Museo-Sans-Cyr/museosanscyrl/MuseoSansCyrl-700.woff') format('woff'),
 }
