@@ -408,6 +408,7 @@
 
 .reviews {
   padding-top: 75px;
+  padding-bottom: 80px;
 }
 
 .reviews__section-title {
@@ -516,5 +517,115 @@
 .reviews__list {
   width: 440px;
   height: 715px;
+  background-color: #fff;
+}
+
+.questions {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: #fbd9bd;
+}
+
+.questions__section-title {
+  font-size: 30px;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.questions__subtitle {
+  font-size: 24px;
+  font-family: 'MuseoSansCyrlW03-300';
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.questions__form-input-mainwrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.questions__form-input-wrap {
+  position: relative;
+  width: 360px;
+  height: 105px;
+}
+
+.questions__form-input-wrap::before {
+  position: absolute;
+  top: -20px;
+  content: '';
+  background-image: linear-gradient(
+    to left rgb(28, 198, 209) 0%,
+    rgb(19, 125, 210) 100%
+  );
+  width: 359px;
+  height: 74px;
+  z-index: -2;
+}
+
+.questions__form-button {
+  border-radius: 8px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to left,
+    $main-light-blue-color 0%,
+    $main-dark-blue-color 100%
+  );
+  width: 360px;
+  height: 73px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: transparent;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $main-light-blue-color;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to left,
+      $main-light-blue-color 0%,
+      $main-dark-blue-color 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    border-width: 2px;
+    border-color: $main-dark-blue-color;
+    border-style: solid;
+    background-color: #fff;
+  }
+}
+
+.questions__form-description {
+  font-size: 20px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: right;
+}
+
+.questions__text-input,
+.questions__tel-input {
+  display: block;
+  width: 359px;
+  height: 74px;
   background-color: #fff;
 }
