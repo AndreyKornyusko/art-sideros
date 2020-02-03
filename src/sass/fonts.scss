@@ -3,7 +3,7 @@
   font-family: 'Brush Script MT';
   font-style: italic;
   font-weight: 400;
-  src: local('Brush Script MT'),
+  src: 
     url('../fonts/BrushScriptMTItalic/7655d129d0addb2f08a5c1dc994aaa4b.woff')
       format('woff');
 }
@@ -37,10 +37,9 @@
 @font-face {
   font-family: 'MuseoSansCyrlW03-700';
   font-style: normal;
-    font-weight: 700;
+  font-weight: 700;
   src: url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl700.woff')
       format('woff'),
-    format('woff'),
     url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl700.woff2')
       format('woff2'),
     url('../fonts/Museo-Sans-Cyr/museosanscyrl/museosanscyrl700.ttf')

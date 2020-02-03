@@ -53,12 +53,28 @@
           <div class="header__nav-wrap">
             <nav class="header__nav">
               <ul class="header__nav-list">
-                <li class="header__nav-list-item">Как мы работаем</li>
-                <li class="header__nav-list-item">О нас</li>
-                <li class="header__nav-list-item">Каталог</li>
-                <li class="header__nav-list-item">Доставка и оплата</li>
-                <li class="header__nav-list-item">Отзывы</li>
-                <li class="header__nav-list-item">Контакты</li>
+                <li class="header__nav-list-item">
+                  <a href="#how-we-work" class="header__list-link"
+                    >Как мы работаем</a
+                  >
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="#about" class="header__list-link">О нас</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="#catalog" class="header__list-link">Каталог</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="#delivery" class="header__list-link"
+                    >Доставка и оплата</a
+                  >
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="#reviews" class="header__list-link">Отзывы</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="#payment" class="header__list-link">Контакты</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -77,8 +93,10 @@
       </div>
       <main>
         <section class="how-we-work" id="how-we-work">
-          <div class="how-we-work__container">
-            <h2 class="how-we-work__section-title">Как мы работаем - всего 6 шагов</h2>
+          <div class="content-wrapper">
+            <h2 class="how-we-work__section-title">
+              Как мы работаем - всего 6 шагов
+            </h2>
             <ul class="how-we-work__img-list">
               <li class="how-we-work__item-img">
                 <div class="img-wrap">
@@ -147,9 +165,9 @@
         </section>
         <section class="about" id="about">
           <div class="content-wrapper">
+            <h2 class="about__section-title">о компании</h2>
             <div class="about__wrapper">
               <div class="about__text-wrap">
-                <h2 class="about__section-title">о компании</h2>
                 <p class="about__text">
                   С другой стороны сложившаяся структура организации
                   представляет собой интересный эксперимент проверки дальнейших
@@ -163,11 +181,135 @@
                 <button class="about__button">подробнее</button>
               </div>
               <div class="about__image-wrap">
-                <img src="./images/about.png" alt="картинка" class="about__image">
+                <img
+                  src="./images/about.png"
+                  alt="картинка"
+                  class="about__image"
+                />
               </div>
             </div>
           </div>
         </section>
+        <section class="catalog" id="catalog">
+          <div class="content-wrapper">
+            <h2 class="catalog__section-title">
+              каталог: <span class="catalog__title-span">раздел первый</span>
+            </h2>
+            <div class="catalog__content-wrap">
+              <div class="catalog__navbar">
+                <nav class="catalog__nav">
+                  <ul class="catalog__list">
+                    <li class="catalog__item">Раздел первый</li>
+                    <li class="catalog__item">Раздел второй</li>
+                    <li class="catalog__item">Раздел третий</li>
+                    <li class="catalog__item">Раздел четвертый</li>
+                    <li class="catalog__item">Раздел пятый</li>
+                    <li class="catalog__item">Раздел шестой</li>
+                    <li class="catalog__item">Раздел седьмой</li>
+                    <li class="catalog__item">Раздел восьмой</li>
+                    <li class="catalog__item">Раздел девятый</li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="catalog__content">
+                <p class="catalog__text">
+                  Идейные соображения высшего порядка, а также консультация с
+                  широким активом позволяет выполнять важные задания по
+                  разработке форм развития. Задача организации, в особенности же
+                  начало повседневной работы по формированию позиции позволяет
+                  оценить значение
+                </p>
+                <div class="catalog__slider-wrap">
+                  <div class="catalog__slider"></div>
+                </div>
+                <div class="catalog__show-more">
+                  <button class="catalog__show-more-button">
+                    показать весь раздел
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="delivery" id="delivery">
+          <div class="content-wrapper">
+            <h2 class="delivery__section-title">
+              оплата, доставка и монтаж
+            </h2>
+            <div class="delivery__navigation">
+              <nav class="delivery__nav">
+                <ul class="delivery__list">
+                  <li class="delivery__item">
+                    <div class="delivery__img-wrap">
+                      <img
+                        src="./images/wallet.png"
+                        alt="картинка"
+                        class="delivery__img"
+                      />
+                    </div>
+                    <div class="delivery__item-text">оплата</div>
+                  </li>
+                  <li class="delivery__item">
+                    <div class="delivery__img-wrap">
+                      <img
+                        src="./images/truck.png"
+                        alt="картинка"
+                        class="delivery__img"
+                      />
+                    </div>
+                    <div class="delivery__item-text">доставка</div>
+                  </li>
+                  <li class="delivery__item">
+                    <div class="delivery__img-wrap">
+                      <img
+                        src="./images/gears.png"
+                        alt="картинка"
+                        class="delivery__img"
+                      />
+                    </div>
+                    <div class="delivery__item-text">монтаж</div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="delivery__content">
+              <div class="delivery__content-title-wrap">
+                <h3 class="delivery__content-title">оплата</h3>
+              </div>
+              <div class="delivery__content-text">
+                С другой стороны сложившаяся структура организации представляет
+                собой интересный эксперимент проверки дальнейших направлений
+                развития. Таким образом новая модель организационной
+                деятельности способствует подготовки и реализации
+                соответствующий условий. С другой стороны сложившаяся структура
+                организации представляет собой интересный эксперимент проверки
+                дальнейших направлений развития. Таким образом новая модель
+                организационной деятельности способствует подготовки и
+                реализации соответствующий условий
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <div class="content-wrapper">
+            <h2 class="reviews__section-title">
+              Отзывы наших клиентов
+            </h2>
+            <div class="reviews__leave-review">
+              <span class="reviews__leave-review-span">
+                Нам важно Ваше мнение
+              </span>
+              <button class="reviews__leave-review-button">
+                оставить отзыв
+              </button>
+            </div>
+            <div class="reviews__content">
+              <div class="reviews__slider-wrap"></div>
+              <div class="reviews__list"></div>
+            </div>
+          </div>
+        </section>
+        <section class="payment" id="payment"></section>
       </main>
     </div>
   </body>

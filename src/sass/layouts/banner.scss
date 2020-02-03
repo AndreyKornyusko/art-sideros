@@ -1,5 +1,5 @@
 .banner {
-  padding-top: 235px;
+  padding-top: 175px;
   padding-bottom: 190px;
   background-image: url(../../images/banner.png);
   background-repeat: no-repeat;
@@ -9,14 +9,14 @@
 
 .banner__title {
   width: 50%;
-  font-size: 65px;
+  font-size: 75px;
   font-family: 'MuseoSansCyrlW03-700';
   font-weight: 700;
   color: rgb(254, 254, 254);
   text-transform: uppercase;
-  line-height: 1.154;
+  line-height: 85px;
   text-align: left;
-  margin-bottom: 45px;
+  margin-bottom: 30px;  
 }
 
 .banner__subtitle {
@@ -31,6 +31,7 @@
 .banner__button {
   border-radius: 8px;
   border: transparent;
+  cursor: pointer;
   background-image: linear-gradient(
     to left,
     $main-light-blue-color 0%,
