@@ -73,7 +73,7 @@
                   <a href="#reviews" class="header__list-link">Отзывы</a>
                 </li>
                 <li class="header__nav-list-item">
-                  <a href="#payment" class="header__list-link">Контакты</a>
+                  <a href="#contacts" class="header__list-link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -321,13 +321,30 @@
               <div class="questions__form-input-mainwrap">
                 <div class="questions__form-input-wrap">
                   <span class="questions__form-description">Ваше имя</span>
-                  <input type="text" class="questions__text-input"/>
+                  <label class="text-input" for="text-input">
+                    <input
+                      id="text-input"
+                      type="text"
+                      class="questions__text-input"
+                    />
+                  </label>
                 </div>
                 <div class="questions__form-input-wrap">
                   <span class="questions__form-description">Ваш телефон</span>
-                  <input type="tel" class="questions__tel-input"/>
+                  <label class="tel-input" for="tel-input">
+                    <input
+                      id="tel-input"
+                      type="tel"
+                      class="questions__tel-input"
+                      placeholder="+79123456789"
+                    />
+                  </label>
                 </div>
-                <button class="questions__form-button">отправить заявку</button>
+                <div class="questions__form-button-wrap">
+                  <button class="questions__form-button">
+                    отправить заявку
+                  </button>
+                </div>
               </div>
               <div class="questions__form-comments">
                 *Даю согласие на обработку персональных данных
@@ -335,8 +352,76 @@
             </form>
           </div>
         </section>
-        <section class="payment" id="payment"></section>
+        <section class="contacts" id="contacts">
+          <div class="content-wrapper">
+            <h2 class="contacts__section-title">
+              контакты
+            </h2>
+            <div class="contacts__main-wrap">
+              <div class="contacts__content-wrap">
+                <a href="tel:+79090121234" class="contacts__tel"
+                  >+7 909 012-12-34</a
+                >
+                <a href="mailto:zakaz@domen.ru" class="contacts__mail"
+                  >zakaz@domen.ru</a
+                >
+                <span class="contacts__address">МОсква, ул. Ленина 26 к.5</span>
+                <span class="contacts__mode">Ежедневно 8:00-18:00</span>
+              </div>
+              <div class="contacts__map-wrap"></div>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer>
+        <div class="content-wrapper">
+          <div class="footer__content">
+            <div class="footer__logo-copyright-wrap">
+              <a class="footer__logo-link" href="#">
+                <div class="footer__logo-wrap">
+                  <!-- <span class="footer__logo-art">арт</span>
+                  <span class="footer__logo-sideros">сидерос</span>
+                  <span class="footer__logo-make"
+                    >изготовление кованых и сварных изделий</span
+                  > -->
+                </div>
+              </a>
+              <div class="footer__copyright-wrap">
+                <a href="#" class="copyright">Все права защищены.</a>
+              </div>
+            </div>
+            <div class="footer__networks-wrap">
+              <div class="footer__fb-wrap">
+                <a href="" class="footer__fb-link">
+                  <img
+                    src="./images/facebook-logo.png"
+                    alt="картинка"
+                    class="footer__fb-img"
+                  />
+                </a>
+              </div>
+              <div class="footer__vk-wrap">
+                <a href="" class="footer__vk-link">
+                  <img
+                    src="./images/vk-social-logotype.png"
+                    alt="картинка"
+                    class="footer__vk-img"
+                  />
+                </a>
+              </div>
+              <div class="footer__inst-wrap">
+                <a href="" class="footer__inst-link">
+                  <img
+                    src="./images/instagram.png"
+                    alt="картинка"
+                    class="footer__inst-img"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

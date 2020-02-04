@@ -22,6 +22,7 @@ header {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .header__logo-art {
@@ -135,7 +136,7 @@ header {
     background-color: #fff;
   }
 }
-
+ 
 .header__contact-wrap {
   width: 230px;
   text-align: right;

@@ -549,25 +549,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 
 .questions__form-input-wrap {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   width: 360px;
   height: 105px;
-}
-
-.questions__form-input-wrap::before {
-  position: absolute;
-  top: -20px;
-  content: '';
-  background-image: linear-gradient(
-    to left rgb(28, 198, 209) 0%,
-    rgb(19, 125, 210) 100%
-  );
-  width: 359px;
-  height: 74px;
-  z-index: -2;
 }
 
 .questions__form-button {
@@ -580,7 +569,6 @@
   );
   width: 360px;
   height: 73px;
-  margin-bottom: 10px;
   font-size: 16px;
   font-family: 'MuseoSansCyrlW03-900';
   font-weight: 900;
@@ -624,8 +612,123 @@
 
 .questions__text-input,
 .questions__tel-input {
+  position: absolute;
   display: block;
   width: 359px;
   height: 74px;
+  padding-left: 67px;
   background-color: #fff;
+  font-size: 24px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  z-index: 2;
+}
+
+.tel-input,
+.text-input {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 359px;
+  height: 74px;
+  z-index: 2;
+}
+
+.text-input::before {
+  position: absolute;
+  content: '';
+  top: 21px;
+  left: 19px;
+  background-image: url(../../images/user.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 28px;
+  height: 33px;
+  z-index: 3;
+}
+
+.tel-input::before {
+  position: absolute;
+  content: '';
+  top: 21px;
+  left: 19px;
+  background-image: url(../../images/telephone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
+.tel-input::after,
+.text-input::after {
+  position: absolute;
+  content: '';
+  top: 3px;
+  background-image: linear-gradient(
+    to left,
+    $main-light-blue-color 0%,
+    $main-dark-blue-color 100%
+  );
+  width: 359px;
+  height: 74px;
+}
+
+.contacts {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+.contacts__section-title {
+  font-size: 30px;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.contacts__main-wrap {
+  display: flex;
+}
+
+.contacts__content-wrap {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contacts__tel,
+.contacts__mail,
+.contacts__address,
+.contacts__mode {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.667;
+  text-align: left;
+  text-decoration: none;
+}
+
+.contacts__tel {
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
+}
+
+.contacts__mail,
+.contacts__address,
+.contacts__mode {
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+}
+
+.contacts__map-wrap {
+  width: 68%;
 }
