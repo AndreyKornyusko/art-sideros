@@ -81,7 +81,7 @@
 }
 
 .about {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 105px;
 }
 
@@ -107,6 +107,7 @@
 .about__image-wrap {
   position: relative;
   width: 50%;
+  z-index: 1;
 }
 
 .about__image {
@@ -130,7 +131,7 @@
     $main-light-orange-color 0%,
     $main-dark-orange-color 59%
   );
-  z-index: -2;
+  // z-index: -2;
 }
 
 .about__button {
@@ -212,7 +213,7 @@
 
 .catalog__navbar {
   position: absolute;
-  top: -70px;
+  top: -53px;
   background-color: rgb(255, 255, 255);
   box-shadow: 6.553px -4.589px 9.8px 0.2px rgba(0, 0, 0, 0.1);
   padding: 0;
@@ -221,7 +222,7 @@
 .catalog__navbar::before {
   position: absolute;
   left: -15px;
-  top: 20px;
+  top: 10px;
   content: '';
   width: 290px;
   height: 630px;
@@ -236,10 +237,12 @@
 
 .catalog__list {
   padding: 0;
+  margin: 0;
 }
 
 .catalog__item {
   width: 290px;
+  height: 70px;
   padding-left: 25px;
   list-style: none;
   font-size: 24px;
@@ -291,6 +294,126 @@
 
 .catalog__slider {
   height: 420px;
+  padding-left: 40px;
+}
+
+.catalog__slider-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__sliler-item {
+  width: 270px;
+  height: 420px;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fef4ec;
+  margin-right: 10px;
+  // background-color: rgb(241, 117, 18);
+  // opacity: 0.078;
+}
+
+.catalog__card-wrap {
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 8px 9.8px 0.2px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 395px;
+  z-index: 3;
+}
+
+.catalog__card-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  padding-top: 12px;
+  background-color: #fff;
+}
+
+.catalog__product-code {
+  display: block;
+  font-size: 16px;
+  font-family: 'MuseoSansCyrlW03-700';
+  font-weight: 700;
+  color: rgb(18, 18, 18);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.catalog__product-size,
+.catalog__product-color {
+  font-size: 16px;
+  font-family: 'MuseoSansCyrlW03-300';
+  font-weight: 300;
+  color: rgb(18, 18, 18);
+  line-height: 1.5;
+}
+
+.catalog__product-color {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.catalog__card-button-price-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog__card-price {
+  font-size: 25px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(18, 18, 18);
+  line-height: 0.96;
+}
+
+.catalog__card-button {
+  border-radius: 8px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to left,
+    $main-light-blue-color 0%,
+    $main-dark-blue-color 100%
+  );
+  width: 123px;
+  height: 40px;
+  font-size: 14px;
+  font-family: 'MuseoSansCyrlW03-900';
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: transparent;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $main-light-blue-color;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to left,
+      $main-light-blue-color 0%,
+      $main-dark-blue-color 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    border-width: 2px;
+    border-color: $main-dark-blue-color;
+    border-style: solid;
+    background-color: #fff;
+  }
 }
 
 .catalog__show-more-button {
@@ -327,14 +450,14 @@
   font-weight: 900;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  padding-left: 320px;
-  margin-bottom: 40px;
+  padding-left: 365px;
+  margin-bottom: 55px;
 }
 
 .delivery__navigation {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .delivery__list {
@@ -374,7 +497,7 @@
 }
 
 .delivery__content {
-  padding: 35px 25px 35px 25px;
+  padding: 35px;
   background-color: #fef4ec;
 }
 
@@ -386,7 +509,7 @@
   text-transform: uppercase;
   text-align: left;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .delivery__item-text {
@@ -404,10 +527,17 @@
   column-count: 3;
   column-width: 546px;
   column-gap: 30px;
+  font-size: 20px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
 }
 
 .reviews {
-  padding-top: 75px;
+  padding-top: 70px;
   padding-bottom: 80px;
 }
 
@@ -419,7 +549,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .reviews__leave-review {
@@ -449,9 +579,6 @@
     $main-light-blue-color 0%,
     $main-dark-blue-color 100%
   );
-  width: 229px;
-  height: 46px;
-  margin-bottom: 10px;
   font-size: 16px;
   font-family: 'MuseoSansCyrlW03-900';
   font-weight: 900;
@@ -514,14 +641,14 @@
   background-position: center;
 }
 
-.reviews__list {
+.reviews__list-wrap {
   width: 440px;
   height: 715px;
   background-color: #fff;
 }
 
 .questions {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #fbd9bd;
 }
@@ -534,7 +661,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .questions__subtitle {
@@ -543,13 +670,31 @@
   font-weight: 300;
   color: rgb(0, 0, 0);
   text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.questions__form-content-wrap {
+  width: 1138px;
+  margin: 0 auto;
 }
 
 .questions__form-input-mainwrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  width: 1138px;
+  margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.questions__form-comments {
+  font-size: 20px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
 }
 
 .questions__form-input-wrap {
@@ -602,12 +747,15 @@
 }
 
 .questions__form-description {
+  display: block;
   font-size: 20px;
   font-family: 'MuseoSansCyrlW03-500';
   font-weight: 500;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: right;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .questions__text-input,
@@ -615,7 +763,7 @@
   position: absolute;
   display: block;
   width: 359px;
-  height: 74px;
+  height: 71px;
   padding-left: 67px;
   background-color: #fff;
   font-size: 24px;
@@ -668,7 +816,6 @@
 .text-input::after {
   position: absolute;
   content: '';
-  top: 3px;
   background-image: linear-gradient(
     to left,
     $main-light-blue-color 0%,
@@ -680,7 +827,7 @@
 
 .contacts {
   padding-top: 90px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 
 .contacts__section-title {
@@ -691,7 +838,7 @@
   text-transform: uppercase;
   text-align: left;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .contacts__main-wrap {

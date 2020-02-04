@@ -1,11 +1,11 @@
 header {
   position: relative;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-bottom: 40px;
   height: 147px;
 }
- 
+
 .header__main-content-wrap {
   width: 100%;
   display: flex;
@@ -15,7 +15,7 @@ header {
 
 .header__logo-wrap {
   position: relative;
-  margin-right: 100px;
+  margin-right: 105px;
 }
 
 .header__logo-link {
@@ -27,16 +27,20 @@ header {
 
 .header__logo-art {
   position: absolute;
-  top: -27px;
-  left: -30px;
+  top: -16px;
+  left: -26px;
   display: block;
-  font-size: 50px;
-  line-height: 30px;
-  font-family: 'Brush Script MT';
-  color: $main-dark-orange-color;
-  font-style: italic;
+  width: 69px;
+  height: 35px;
+  background-image: url(../../images/арт.png);
+
+  // font-size: 50px;
+  // line-height: 30px;
+  // font-family: 'Brush Script MT';
+  // color: $main-dark-orange-color;
+  // font-style: italic;
 }
- 
+
 .header__logo-sideros,
 .header__logo-make {
   font-family: 'MuseoSansCyrlW03-900';
@@ -55,7 +59,10 @@ header {
 }
 
 .header__logo-sideros {
+  display: block;
   font-size: 60px;
+  margin: 0;
+  padding: 0;
 }
 
 .header__logo-make {
@@ -66,14 +73,14 @@ header {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  width: 200px;
+  width: 195px;
   padding-bottom: 5px;
 }
 
 .header__shedule-img-wrap {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .header__shedule-img {
@@ -136,7 +143,7 @@ header {
     background-color: #fff;
   }
 }
- 
+
 .header__contact-wrap {
   width: 230px;
   text-align: right;
@@ -151,6 +158,7 @@ header {
   font-size: 24px;
   color: rgb(0, 0, 0);
   text-decoration: none;
+  line-height: 32px;
 }
 
 .header__contact-wrap-tel,
@@ -172,13 +180,14 @@ header {
 .header__nav-wrap {
   position: absolute;
   bottom: -50px;
+  clip-path: polygon(0% 0%, 100% 0%, 99.5% 100%, 0.5% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 80px;
   padding-left: 80px;
   margin: 0 auto;
-  border-radius: -1px;
+  border-radius: 10px 10px 15px 15px;
   background-image: linear-gradient(
     to top,
     $main-light-orange-color 0%,
@@ -186,7 +195,7 @@ header {
   );
   box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.23);
   width: 1232px;
-  height: 66px;
+  height: 66px;  
 }
 
 .header__nav {
