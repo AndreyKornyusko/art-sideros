@@ -160,12 +160,12 @@
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  // font-family: swiper-icons;
-  // font-size: var(--swiper-navigation-size);
-  // text-transform: none !important;
-  // letter-spacing: 0;
-  // text-transform: none;
-  // font-variant: initial;
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -193,6 +193,26 @@
 .swiper-button-next.swiper-button-black {
   --swiper-navigation-color: #000000;
 }
+
+// .custom-next, .custom-prev{
+//   position: relative;
+// }
+
+// .custom-next::after {
+//   position: absolute;
+//   content: '';
+//   right: -20px!important;
+//   z-index: 20;
+// }
+
+// .custom-prev::after {
+//   position: absolute;
+//   content: '';
+//   left: -20px!important;
+//   z-index: 20;
+// }
+
+
 .swiper-button-lock {
   display: none;
 }

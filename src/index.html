@@ -200,35 +200,298 @@
         <section class="catalog" id="catalog">
           <div class="content-wrapper">
             <h2 class="catalog__section-title">
-              каталог: <span class="catalog__title-span">раздел первый</span>
+              каталог:
+              <span class="catalog__title-span tab is-active tab-1"
+                >&ensp;раздел первый</span
+              ><span class="catalog__title-span tab tab-2"
+                >&ensp;раздел второй</span
+              ><span class="catalog__title-span tab tab-3"
+                >&ensp;раздел третий</span
+              ><span class="catalog__title-span tab tab-4"
+                >&ensp;раздел четвертый</span
+              ><span class="catalog__title-span tab tab-5"
+                >&ensp;раздел пятый</span
+              ><span class="catalog__title-span tab tab-6"
+                >&ensp;раздел шестой</span
+              ><span class="catalog__title-span tab tab-7"
+                >&ensp;раздел седьмой</span
+              ><span class="catalog__title-span tab tab-8"
+                >&ensp;раздел восьмой</span
+              ><span class="catalog__title-span tab tab-9"
+                >&ensp;раздел девятый</span
+              >
             </h2>
             <div class="catalog__content-wrap">
               <div class="catalog__navbar">
                 <nav class="catalog__nav">
                   <ul class="catalog__list">
-                    <li class="catalog__item">Раздел первый</li>
-                    <li class="catalog__item">Раздел второй</li>
-                    <li class="catalog__item">Раздел третий</li>
-                    <li class="catalog__item">Раздел четвертый</li>
-                    <li class="catalog__item">Раздел пятый</li>
-                    <li class="catalog__item">Раздел шестой</li>
-                    <li class="catalog__item">Раздел седьмой</li>
-                    <li class="catalog__item">Раздел восьмой</li>
-                    <li class="catalog__item">Раздел девятый</li>
+                    <li
+                      class="catalog__item tabs-nav__item is-active"
+                      data-tab-name="tab-1"
+                    >
+                      Раздел первый
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-2"
+                    >
+                      Раздел второй
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-3"
+                    >
+                      Раздел третий
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-4"
+                    >
+                      Раздел четвертый
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-5"
+                    >
+                      Раздел пятый
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-6"
+                    >
+                      Раздел шестой
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-7"
+                    >
+                      Раздел седьмой
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-8"
+                    >
+                      Раздел восьмой
+                    </li>
+                    <li
+                      class="catalog__item tabs-nav__item"
+                      data-tab-name="tab-9"
+                    >
+                      Раздел девятый
+                    </li>
                   </ul>
                 </nav>
               </div>
               <div class="catalog__content">
-                <p class="catalog__text">
-                  Идейные соображения высшего порядка, а также консультация с
-                  широким активом позволяет выполнять важные задания по
-                  разработке форм развития. Задача организации, в особенности же
-                  начало повседневной работы по формированию позиции позволяет
-                  оценить значение
-                </p>
-                <div class="catalog__slider-wrap">
-                  <div class="catalog__slider">
-                    <ul class="catalog__slider-list">
+                <div class="tab is-active tab-1">
+                  <p class="catalog__text">
+                    Идейные соображения высшего порядка, а также консультация с
+                    широким активом позволяет выполнять важные задания по
+                    разработке форм развития. Задача организации, в особенности
+                    же начало повседневной работы по формированию позиции
+                    позволяет оценить значение
+                  </p>
+                  <div class="catalog__slider-wrap">
+                    <div class="catalog__slider">
+                      <div class="swiper-container s1">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="catalog__sliler-item">
+                              <div class="catalog__card-wrap">
+                                <div class="catalog__img-card-wrap">
+                                  <img
+                                    src="./images/goods3.png"
+                                    alt="фото товара"
+                                    class="catalog__card-img"
+                                  />
+                                </div>
+                                <div class="catalog__card-content-wrap">
+                                  <span class="catalog__product-code"
+                                    >Товар 001</span
+                                  >
+                                  <span class="catalog__product-size"
+                                    >Размер: 1500х800х300</span
+                                  >
+                                  <span class="catalog__product-color"
+                                    >Цвет: черный</span
+                                  >
+                                  <div class="catalog__card-button-price-wrap">
+                                    <span class="catalog__card-price"
+                                      >4790₽</span
+                                    >
+                                    <button class="catalog__card-button">
+                                      заказать
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="catalog__sliler-item">
+                              <div class="catalog__card-wrap">
+                                <div class="catalog__img-card-wrap">
+                                  <img
+                                    src="./images/goods2.png"
+                                    alt="фото товара"
+                                    class="catalog__card-img"
+                                  />
+                                </div>
+                                <div class="catalog__card-content-wrap">
+                                  <span class="catalog__product-code"
+                                    >Товар 002</span
+                                  >
+                                  <span class="catalog__product-size"
+                                    >Размер: 1500х800х300</span
+                                  >
+                                  <span class="catalog__product-color"
+                                    >Цвет: черный</span
+                                  >
+                                  <div class="catalog__card-button-price-wrap">
+                                    <span class="catalog__card-price"
+                                      >4790₽</span
+                                    >
+                                    <button class="catalog__card-button">
+                                      заказать
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="catalog__sliler-item">
+                              <div class="catalog__card-wrap">
+                                <div class="catalog__img-card-wrap">
+                                  <img
+                                    src="./images/goods1.png"
+                                    alt="фото товара"
+                                    class="catalog__card-img"
+                                  />
+                                </div>
+                                <div class="catalog__card-content-wrap">
+                                  <span class="catalog__product-code"
+                                    >Товар 003</span
+                                  >
+                                  <span class="catalog__product-size"
+                                    >Размер: 1500х800х300</span
+                                  >
+                                  <span class="catalog__product-color"
+                                    >Цвет: черный</span
+                                  >
+                                  <div class="catalog__card-button-price-wrap">
+                                    <span class="catalog__card-price"
+                                      >4790₽</span
+                                    >
+                                    <button class="catalog__card-button">
+                                      заказать
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="catalog__sliler-item">
+                              <div class="catalog__card-wrap">
+                                <div class="catalog__img-card-wrap">
+                                  <img
+                                    src="./images/goods3.png"
+                                    alt="фото товара"
+                                    class="catalog__card-img"
+                                  />
+                                </div>
+                                <div class="catalog__card-content-wrap">
+                                  <span class="catalog__product-code"
+                                    >Товар 001</span
+                                  >
+                                  <span class="catalog__product-size"
+                                    >Размер: 1500х800х300</span
+                                  >
+                                  <span class="catalog__product-color"
+                                    >Цвет: черный</span
+                                  >
+                                  <div class="catalog__card-button-price-wrap">
+                                    <span class="catalog__card-price"
+                                      >4790₽</span
+                                    >
+                                    <button class="catalog__card-button">
+                                      заказать
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="catalog__sliler-item">
+                              <div class="catalog__card-wrap">
+                                <div class="catalog__img-card-wrap">
+                                  <img
+                                    src="./images/goods3.png"
+                                    alt="фото товара"
+                                    class="catalog__card-img"
+                                  />
+                                </div>
+                                <div class="catalog__card-content-wrap">
+                                  <span class="catalog__product-code"
+                                    >Товар 001</span
+                                  >
+                                  <span class="catalog__product-size"
+                                    >Размер: 1500х800х300</span
+                                  >
+                                  <span class="catalog__product-color"
+                                    >Цвет: черный</span
+                                  >
+                                  <div class="catalog__card-button-price-wrap">
+                                    <span class="catalog__card-price"
+                                      >4790₽</span
+                                    >
+                                    <button class="catalog__card-button">
+                                      заказать
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="catalog__sliler-item">
+                              <div class="catalog__card-wrap">
+                                <div class="catalog__img-card-wrap">
+                                  <img
+                                    src="./images/goods3.png"
+                                    alt="фото товара"
+                                    class="catalog__card-img"
+                                  />
+                                </div>
+                                <div class="catalog__card-content-wrap">
+                                  <span class="catalog__product-code"
+                                    >Товар 001</span
+                                  >
+                                  <span class="catalog__product-size"
+                                    >Размер: 1500х800х300</span
+                                  >
+                                  <span class="catalog__product-color"
+                                    >Цвет: черный</span
+                                  >
+                                  <div class="catalog__card-button-price-wrap">
+                                    <span class="catalog__card-price"
+                                      >4790₽</span
+                                    >
+                                    <button class="catalog__card-button">
+                                      заказать
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next custom-next"></div>
+                        <div class="swiper-button-prev custom-prev"></div>
+                      </div>
+                      <!-- <ul class="catalog__slider-list">
                       <li class="catalog__sliler-item">
                         <div class="catalog__card-wrap">
                           <div class="catalog__img-card-wrap">
@@ -307,9 +570,19 @@
                           </div>
                         </div>
                       </li>
-                    </ul>
+                    </ul> -->
+                    </div>
                   </div>
                 </div>
+                <div class="tab tab-2">tab-2</div>
+                <div class="tab tab-3">tab-3</div>
+                <div class="tab tab-4">tab-4</div>
+                <div class="tab tab-5">tab-5</div>
+                <div class="tab tab-6">tab-6</div>
+                <div class="tab tab-7">tab-7</div>
+                <div class="tab tab-8">tab-8</div>
+                <div class="tab tab-9">tab-9</div>
+
                 <div class="catalog__show-more">
                   <button class="catalog__show-more-button">
                     показать весь раздел
@@ -393,7 +666,7 @@
             </div>
             <div class="reviews__content">
               <div class="reviews__slider-wrap">
-                <div class="swiper-container">
+                <div class="swiper-container s2">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <img src="./images/preview.png" alt="" />
@@ -574,7 +847,25 @@
     <!-- <script src="./js/swiper.min.js"></script>
     <script src="./js/common.js"></script> -->
     <script>
-      var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper('.s1', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        observer: true,
+        observeParents: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      var swiper = new Swiper('.s2', {
         cssMode: true,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -588,6 +879,36 @@
         observer: true,
         observeParents: true,
       });
+    </script>
+    <script>
+      let tab = function() {
+        let tabNav = document.querySelectorAll('.tabs-nav__item'),
+          tabContent = document.querySelectorAll('.tab'),
+          tabName;
+
+        tabNav.forEach(item => {
+          item.addEventListener('click', selectTabNav);
+        });
+
+        function selectTabNav() {
+          tabNav.forEach(item => {
+            item.classList.remove('is-active');
+          });
+          this.classList.add('is-active');
+          tabName = this.getAttribute('data-tab-name');
+          selectTabContent(tabName);
+        }
+
+        function selectTabContent(tabName) {
+          tabContent.forEach(item => {
+            item.classList.contains(tabName)
+              ? item.classList.add('is-active')
+              : item.classList.remove('is-active');
+          });
+        }
+      };
+
+      tab();
     </script>
   </body>
 </html>
