@@ -31,7 +31,7 @@ const css = () => {
         postcss([
           // usedcss({ html: ['src/index.html'] }),
           autoprefixer(),
-          cssnano(),
+          // cssnano(),
         ]),
       ),
     )

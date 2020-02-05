@@ -1,16 +1,16 @@
 // swiper.update();
 
-var swiper = new Swiper('.swiper-container', {
-  cssMode: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  mousewheel: true,
-  keyboard: true,
-  observer: true,
-  observeParents: true
-}); 
+// var swiper = new Swiper('.swiper-container', {
+//   cssMode: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   pagination: {
+//     el: '.swiper-pagination'
+//   },
+//   mousewheel: true,
+//   keyboard: true,
+//   observer: true,
+//   observeParents: true
+// }); 

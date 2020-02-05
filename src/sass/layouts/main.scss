@@ -635,10 +635,6 @@
 .reviews__slider-wrap {
   width: 780px;
   height: 715px;
-  background-image: url(../../images/preview.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .swiper-button-prev{
@@ -671,6 +667,11 @@
   height: 50px;
 }
 
+.swiper-slide img{
+  width: 100%;
+  height: auto;
+}
+
 .reviews__list-wrap {
   width: 440px;
   height: 715px;
@@ -681,7 +682,7 @@
   position: relative;
   height: 100px;
 }
-
+  
 .reviews__list-decore::before {
   position: absolute;
   content: '';
