@@ -359,7 +359,7 @@
   margin-bottom: 10px;
 }
 
-.catalog__card-button-price-wrap{
+.catalog__card-button-price-wrap {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -641,10 +641,125 @@
   background-position: center;
 }
 
+.swiper-button-prev{
+  position: relative;
+}
+
+.swiper-button-prev::after{
+  position: absolute;
+  content: '';
+  background-image: url(../../images/442-arrow-down.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25px;
+  height: 50px;
+}
+
+.swiper-button-next{
+  position: relative;
+}
+
+.swiper-button-next::after{
+  position: absolute;
+  content: '';
+  background-image: url(../../images/442-arrow-down2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25px;
+  height: 50px;
+}
+
 .reviews__list-wrap {
   width: 440px;
   height: 715px;
   background-color: #fff;
+}
+
+.reviews__list-decore {
+  position: relative;
+  height: 100px;
+}
+
+.reviews__list-decore::before {
+  position: absolute;
+  content: '';
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60px;
+  height: 43px;
+  background-image: url(../../images/quote.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.reviews__list {
+  height: 620px;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  margin-right: 5px;
+}
+
+.reviews__list::-webkit-scrollbar {
+  width: 20px;
+}
+
+.reviews__list::-webkit-scrollbar-thumb {
+  background: #f6a565 !important;
+  border-radius: 10px !important;
+}
+
+.reviews__list::-webkit-scrollbar-track {
+  background-color: #fff !important;
+}
+
+.reviews__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 380px;
+  border-top: 2px solid #f5f5f5;
+  margin: 0 auto;
+  padding: 27px 10px 40px 10px;
+}
+
+.reviews__item-img-wrap {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.reviews__item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.reviews__item-name {
+  display: block;
+  font-size: 24px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.reviews__item-text {
+  font-size: 20px;
+  font-family: 'MuseoSansCyrlW03-500';
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.749);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .questions {
@@ -877,5 +992,14 @@
 }
 
 .contacts__map-wrap {
+  position: relative;
   width: 68%;
+}
+
+.contacts__map {
+  position: absolute;
+  top: -60px;
+  width: 826px;
+  height: 220px;
+  background-color: rgb(239, 243, 247);
 }
