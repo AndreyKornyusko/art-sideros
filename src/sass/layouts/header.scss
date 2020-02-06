@@ -1,9 +1,12 @@
 header {
   position: relative;
   width: 100%;
-  padding-top: 13px;
   padding-bottom: 40px;
   height: 147px;
+  @media (min-width: 768px) {
+    height: 82px;
+    padding-bottom: 22px;
+  }
 }
 
 .header__main-content-wrap {
@@ -15,7 +18,10 @@ header {
 
 .header__logo-wrap {
   position: relative;
-  margin-right: 105px;
+  margin-right: 110px;
+  @media (min-width: 768px) {
+    margin-right: 80px;
+  }
 }
 
 .header__logo-link {
@@ -33,12 +39,20 @@ header {
   width: 69px;
   height: 35px;
   background-image: url(../../images/арт.png);
-
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   // font-size: 50px;
   // line-height: 30px;
   // font-family: 'Brush Script MT';
   // color: $main-dark-orange-color;
   // font-style: italic;
+  @media (min-width: 768px) {
+    width: 42px;
+    height: 20px;
+    top: -9px;
+    left: 0px;
+  }
 }
 
 .header__logo-sideros,
@@ -56,6 +70,9 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: table;
+  @media (min-width: 768px) {
+    padding-left: 14px;
+  }
 }
 
 .header__logo-sideros {
@@ -63,10 +80,20 @@ header {
   font-size: 60px;
   margin: 0;
   padding: 0;
+  @media (min-width: 768px) {
+    padding-left: 14px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 35px;
+  }
 }
 
 .header__logo-make {
   font-size: 12px;
+  @media (min-width: 768px) {
+    font-size: 7px;
+  }
 }
 
 .header__schedule-wrap {
@@ -75,12 +102,21 @@ header {
   align-items: center;
   width: 195px;
   padding-bottom: 5px;
+  @media (min-width: 768px) {
+    width: 117px;
+    margin-right: 30px;
+  }
 }
 
 .header__shedule-img-wrap {
   width: 50px;
   height: 50px;
   margin-right: 7px;
+  @media (min-width: 768px) {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+  }
 }
 
 .header__shedule-img {
@@ -95,10 +131,18 @@ header {
   font-weight: 700;
   color: rgb(0, 0, 0);
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    font-size: 14px;
+  }
 }
 
 .header__buttons-wrap {
   width: 200px;
+  @media (min-width: 768px) {
+    width: 135px;
+  }
 }
 
 .header__button {
@@ -142,6 +186,13 @@ header {
     border-style: solid;
     background-color: #fff;
   }
+
+  @media (min-width: 768px) {
+    width: 135px;
+    height: 27px;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
 }
 
 .header__contact-wrap {
@@ -149,6 +200,10 @@ header {
   text-align: right;
   margin-left: 35px;
   padding-bottom: 15px;
+  @media (min-width: 768px) {
+    width: 135px;
+    padding-bottom: 0px;
+  }
 }
 
 .header__contact-wrap-tel,
@@ -159,6 +214,10 @@ header {
   color: rgb(0, 0, 0);
   text-decoration: none;
   line-height: 32px;
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .header__contact-wrap-tel,
@@ -193,9 +252,18 @@ header {
     $main-light-orange-color 0%,
     $main-dark-orange-color 59%
   );
-  box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.23);
   width: 1232px;
-  height: 66px;  
+  background-color: #fff;
+  box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.23);
+  z-index: 100;
+
+  @media (min-width: 768px) {
+    bottom: -27px;
+    width: 722px;
+    border-radius: 5px 5px 10px 10px;
+    padding-right: 48px;
+    padding-left: 48px;
+  }
 }
 
 .header__nav {
@@ -222,7 +290,7 @@ header {
 }
 
 .header__list-link {
-  line-height: 40px;
+  line-height: 66px;
   font-size: 24px;
   font-family: 'MuseoSansCyrlW03-500';
   font-weight: 500;
@@ -232,5 +300,9 @@ header {
     font-family: 'MuseoSansCyrlW03-900';
     font-weight: 900;
     text-decoration: underline;
+  }
+  @media (min-width: 768px) {
+    line-height: 40px;
+    font-size: 14px;
   }
 }

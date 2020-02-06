@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-width: 768px) {
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
 }
 
 .banner__title {
@@ -16,7 +20,12 @@
   text-transform: uppercase;
   line-height: 85px;
   text-align: left;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
 }
 
 .banner__subtitle {
@@ -26,6 +35,10 @@
   color: rgb(254, 254, 254);
   line-height: 1.2;
   margin-bottom: 48px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 27px;
+  }
 }
 
 .banner__button {
@@ -67,5 +80,11 @@
     border-color: $main-dark-blue-color;
     border-style: solid;
     background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    font-size: 11px;
+    width: 161px;
+    height: 33px;
+    margin-bottom: 48px;
   }
 }

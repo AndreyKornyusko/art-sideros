@@ -7,20 +7,27 @@
 @import 'variables.scss';
 @import './layouts/modules.scss';
 @import './swiper.scss';
- 
+
 .main-wrapper {
   width: 100%;
+  min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 16px;
   @media (min-width: 768px) {
+    padding-top: 9px;
   }
 }
 
 .content-wrapper {
+  width: 100%;
+  min-width: 300px;
   max-width: 1220px;
   margin: 0 auto;
-  // @media (min-width: 768px) {
-  //   max-width: 744px;
-  // }
+  @media (min-width: 768px) {
+    max-width: 728px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1220px;
+  }
 }

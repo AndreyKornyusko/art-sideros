@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Арт-сидерос</title>
-    <link rel="stylesheet" href="./css/styles.css?t=1580945318562" />
-    <script
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <script
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
       type="text/javascript"
-    ></script>
-    <script src="./js/yandex.js?t=1580945318562" type="text/javascript"></script>
+    ></script> -->
+    <!-- <script src="./js/yandex.js" type="text/javascript"></script> -->
   </head>
 
   <body>
@@ -491,86 +491,6 @@
                         <div class="swiper-button-next custom-next"></div>
                         <div class="swiper-button-prev custom-prev"></div>
                       </div>
-                      <!-- <ul class="catalog__slider-list">
-                      <li class="catalog__sliler-item">
-                        <div class="catalog__card-wrap">
-                          <div class="catalog__img-card-wrap">
-                            <img
-                              src="./images/goods3.png"
-                              alt="фото товара"
-                              class="catalog__card-img"
-                            />
-                          </div>
-                          <div class="catalog__card-content-wrap">
-                            <span class="catalog__product-code">Товар 001</span>
-                            <span class="catalog__product-size"
-                              >Размер: 1500х800х300</span
-                            >
-                            <span class="catalog__product-color"
-                              >Цвет: черный</span
-                            >
-                            <div class="catalog__card-button-price-wrap">
-                              <span class="catalog__card-price">4790₽</span>
-                              <button class="catalog__card-button">
-                                заказать
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="catalog__sliler-item">
-                        <div class="catalog__card-wrap">
-                          <div class="catalog__img-card-wrap">
-                            <img
-                              src="./images/goods3.png"
-                              alt="фото товара"
-                              class="catalog__card-img"
-                            />
-                          </div>
-                          <div class="catalog__card-content-wrap">
-                            <span class="catalog__product-code">Товар 001</span>
-                            <span class="catalog__product-size"
-                              >Размер: 1500х800х300</span
-                            >
-                            <span class="catalog__product-color"
-                              >Цвет: черный</span
-                            >
-                            <div class="catalog__card-button-price-wrap">
-                              <span class="catalog__card-price">4790₽</span>
-                              <button class="catalog__card-button">
-                                заказать
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="catalog__sliler-item">
-                        <div class="catalog__card-wrap">
-                          <div class="catalog__img-card-wrap">
-                            <img
-                              src="./images/goods3.png"
-                              alt="фото товара"
-                              class="catalog__card-img"
-                            />
-                          </div>
-                          <div class="catalog__card-content-wrap">
-                            <span class="catalog__product-code">Товар 001</span>
-                            <span class="catalog__product-size"
-                              >Размер: 1500х800х300</span
-                            >
-                            <span class="catalog__product-color"
-                              >Цвет: черный</span
-                            >
-                            <div class="catalog__card-button-price-wrap">
-                              <span class="catalog__card-price">4790₽</span>
-                              <button class="catalog__card-button">
-                                заказать
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul> -->
                     </div>
                   </div>
                 </div>
@@ -600,17 +520,27 @@
             <div class="delivery__navigation">
               <nav class="delivery__nav">
                 <ul class="delivery__list">
-                  <li class="delivery__item">
-                    <div class="delivery__img-wrap">
-                      <img
-                        src="./images/wallet.png"
-                        alt="картинка"
-                        class="delivery__img"
-                      />
+                  <li
+                    class="delivery__item delivery__tabs-nav-item delivery__is-active"
+                    data-tab-name="delivery__tab-1"
+                  >
+                    <div class="delivery__main-img-wrap">
+                      <div class="delivery__img-wrap">
+                        <img
+                          src="./images/wallet.png"
+                          alt="картинка"
+                          class="delivery__img"
+                        />
+                      </div>
+                      <div class="delivery__arrow delivery__tab delivery__is-active delivery__tab-1"></div>
                     </div>
                     <div class="delivery__item-text">оплата</div>
                   </li>
-                  <li class="delivery__item">
+                  <li
+                    class="delivery__item delivery__tabs-nav-item"
+                    data-tab-name="delivery__tab-2"
+                  >
+                  <div class="delivery__main-img-wrap">
                     <div class="delivery__img-wrap">
                       <img
                         src="./images/truck.png"
@@ -618,9 +548,15 @@
                         class="delivery__img"
                       />
                     </div>
+                    <div class="delivery__arrow delivery__tab  delivery__tab-2"></div>
+                  </div>
                     <div class="delivery__item-text">доставка</div>
                   </li>
-                  <li class="delivery__item">
+                  <li
+                    class="delivery__item delivery__tabs-nav-item"
+                    data-tab-name="delivery__tab-3"
+                  >
+                  <div class="delivery__main-img-wrap">
                     <div class="delivery__img-wrap">
                       <img
                         src="./images/gears.png"
@@ -628,6 +564,8 @@
                         class="delivery__img"
                       />
                     </div>
+                    <div class="delivery__arrow delivery__tab  delivery__tab-3"></div>
+                  </div>
                     <div class="delivery__item-text">монтаж</div>
                   </li>
                 </ul>
@@ -635,19 +573,70 @@
             </div>
             <div class="delivery__content">
               <div class="delivery__content-title-wrap">
-                <h3 class="delivery__content-title">оплата</h3>
+                <div class="delivery__title-item-wrap">
+                  <h3
+                    class="delivery__content-title delivery__tab delivery__is-active delivery__tab-1"
+                  >
+                    оплата
+                  </h3>
+                </div>
+                <div class="delivery__title-item-wrap">
+                  <h3
+                    class="delivery__content-title delivery__tab delivery__tab-2"
+                  >
+                    доставка
+                  </h3>
+                </div>
+                <div class="delivery__title-item-wrap">
+                  <h3
+                    class="delivery__content-title delivery__tab delivery__tab-3"
+                  >
+                    монтаж
+                  </h3>
+                </div>
               </div>
-              <p class="delivery__content-text">
-                С другой стороны сложившаяся структура организации представляет
-                собой интересный эксперимент проверки дальнейших направлений
-                развития. Таким образом новая модель организационной
-                деятельности способствует подготовки и реализации
-                соответствующий условий. С другой стороны сложившаяся структура
-                организации представляет собой интересный эксперимент проверки
-                дальнейших направлений развития. Таким образом новая модель
-                организационной деятельности способствует подготовки и
-                реализации соответствующий условий
-              </p>
+              <div class="delivery__tab delivery__is-active delivery__tab-1">
+                <p class="delivery__content-text">
+                  Оплата С другой стороны сложившаяся структура организации
+                  представляет собой интересный эксперимент проверки дальнейших
+                  направлений развития. Таким образом новая модель
+                  организационной деятельности способствует подготовки и
+                  реализации соответствующий условий. С другой стороны
+                  сложившаяся структура организации представляет собой
+                  интересный эксперимент проверки дальнейших направлений
+                  развития. Таким образом новая модель организационной
+                  деятельности способствует подготовки и реализации
+                  соответствующий условий
+                </p>
+              </div>
+              <div class="delivery__tab delivery__tab-2">
+                <p class="delivery__content-text">
+                  Доставка С другой стороны сложившаяся структура организации
+                  представляет собой интересный эксперимент проверки дальнейших
+                  направлений развития. Таким образом новая модель
+                  организационной деятельности способствует подготовки и
+                  реализации соответствующий условий. С другой стороны
+                  сложившаяся структура организации представляет собой
+                  интересный эксперимент проверки дальнейших направлений
+                  развития. Таким образом новая модель организационной
+                  деятельности способствует подготовки и реализации
+                  соответствующий условий
+                </p>
+              </div>
+              <div class="delivery__tab delivery__tab-3">
+                <p class="delivery__content-text">
+                  Монтаж С другой стороны сложившаяся структура организации
+                  представляет собой интересный эксперимент проверки дальнейших
+                  направлений развития. Таким образом новая модель
+                  организационной деятельности способствует подготовки и
+                  реализации соответствующий условий. С другой стороны
+                  сложившаяся структура организации представляет собой
+                  интересный эксперимент проверки дальнейших направлений
+                  развития. Таким образом новая модель организационной
+                  деятельности способствует подготовки и реализации
+                  соответствующий условий
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -842,10 +831,8 @@
     </div>
 
     <!-- Swiper JS -->
-    <script src="./js/scripts.js?t=1580945318562"></script>
+    <script src="./js/scripts.js"></script>
 
-    <!-- <script src="./js/swiper.min.js"></script>
-    <script src="./js/common.js"></script> -->
     <script>
       var swiper = new Swiper('.s1', {
         slidesPerView: 3,
@@ -909,6 +896,38 @@
       };
 
       tab();
+    </script>
+    <script>
+      let deliveryTab = function() {
+        let deleveryTabNav = document.querySelectorAll(
+            '.delivery__tabs-nav-item',
+          ),
+          deleveryTabContent = document.querySelectorAll('.delivery__tab'),
+          deleveryTabName;
+
+        deleveryTabNav.forEach(item => {
+          item.addEventListener('click', selectDeliveryTabNav);
+        });
+
+        function selectDeliveryTabNav() {
+          deleveryTabNav.forEach(item => {
+            item.classList.remove('delivery__is-active');
+          });
+          this.classList.add('delivery__is-active');
+          deleveryTabName = this.getAttribute('data-tab-name');
+          selectTabContent(deleveryTabName);
+        }
+
+        function selectTabContent(deleveryTabName) {
+          deleveryTabContent.forEach(item => {
+            item.classList.contains(deleveryTabName)
+              ? item.classList.add('delivery__is-active')
+              : item.classList.remove('delivery__is-active');
+          });
+        }
+      };
+
+      deliveryTab();
     </script>
   </body>
 </html>
