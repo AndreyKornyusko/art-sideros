@@ -433,6 +433,8 @@ body {
 header {
   position: relative;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 12px;
 }
 
 .header__content-wrap {
@@ -445,8 +447,8 @@ header {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
 }
 
 .header__logo-wrap {
@@ -466,6 +468,10 @@ header {
 .header__logo-art {
   position: absolute;
   display: block;
+  width: 30px;
+  height: 15px;
+  top: -10px;
+  left: 0px;
   background-image: url(../../images/арт.png);
   background-position: center;
   background-size: contain;
@@ -474,6 +480,7 @@ header {
 
 .header__logo-sideros,
 .header__logo-make {
+  padding-left: 12px;
   font-family: 'MuseoSansCyrlW03-900';
   font-weight: 900;
   color: #1cc7d1;
@@ -490,11 +497,16 @@ header {
   display: block;
   margin: 0;
   padding: 0;
+  font-size: 25px;
+  padding-left: 12px;
+}
+
+.header__logo-make {
+  font-size: 5px;
 }
 
 .header__schedule-wrap {
-  display: -webkit-box;
-  display: flex;
+  display: none;
   flex-wrap: nowrap;
   -webkit-box-align: center;
           align-items: center;
@@ -511,6 +523,10 @@ header {
   font-weight: 700;
   color: black;
   text-align: center;
+}
+
+.header__buttons-wrap {
+  display: none;
 }
 
 .header__button {
@@ -550,6 +566,7 @@ header {
 }
 
 .header__contact-wrap {
+  display: none;
   text-align: right;
   margin-left: 35px;
 }
@@ -581,15 +598,35 @@ header {
   font-weight: 500;
 }
 
+.header__menu-button {
+  width: 30px;
+  height: 19px;
+  border: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f17512), to(#ffa258));
+  background-image: linear-gradient(to left, #f17512 0%, #ffa258 100%);
+}
+
+.header__menu-button:active {
+  outline: none;
+}
+
+.header__menu-button:focus {
+  outline: none;
+}
+
+.header__menu-button:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#f17512), to(#ffa258));
+  background: linear-gradient(to left, #f17512 0%, #ffa258 100%);
+}
+
 .header__nav-wrap {
+  display: none;
   position: absolute;
   width: 99%;
   right: 0;
   left: 0;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 99.5% 100%, 0.5% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 99.5% 100%, 0.5% 100%);
-  display: -webkit-box;
-  display: flex;
   -webkit-box-pack: center;
           justify-content: center;
   -webkit-box-align: center;
@@ -649,24 +686,43 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 45px;
+  padding-bottom: 64px;
+}
+
+.banner__content-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .banner__title {
-  width: 50%;
   font-family: 'MuseoSansCyrlW03-700';
   font-weight: 700;
   color: #fefefe;
   text-transform: uppercase;
-  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .banner__subtitle {
   font-family: 'MuseoSansCyrlW03-300';
   font-weight: 300;
   color: #fefefe;
+  font-size: 12px;
+  margin-bottom: 18px;
+  text-align: center;
 }
 
 .banner__button {
+  width: 160px;
+  height: 33px;
   border-radius: 8px;
   border: transparent;
   cursor: pointer;
@@ -677,6 +733,8 @@ header {
   font-weight: 900;
   text-transform: uppercase;
   border: transparent;
+  font-size: 11px;
+  margin: 0 auto;
 }
 
 .banner__button:active {
@@ -709,12 +767,19 @@ header {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+
+.how-we-work {
+  padding-top: 25px;
+  padding-bottom: 36px;
 }
 
 .how-we-work__img-list {
   display: -webkit-box;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
@@ -726,6 +791,8 @@ header {
 .how-we-work__item-img {
   position: relative;
   list-style: none;
+  width: 25.33333333%;
+  margin-bottom: 23px;
 }
 
 .how-we-work__item-img:nth-child(odd) .img-wrap::after,
@@ -733,6 +800,9 @@ header {
   position: absolute;
   content: '';
   right: -90%;
+  top: 20px;
+  width: 30px;
+  height: 12px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -751,10 +821,16 @@ header {
   visibility: hidden;
 }
 
+.how-we-work__item-img:nth-child(3) .img-wrap::after {
+  display: none;
+}
+
 .how-we-work__item-img .img-wrap {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 13px;
 }
 
 .how-we-work__img {
@@ -764,11 +840,17 @@ header {
 
 .how-we-work__img-description {
   position: absolute;
+  top: 58px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
   margin: 0 auto;
   text-align: center;
   font-family: 'MuseoSansCyrlW03-500';
   font-weight: 500;
   color: black;
+  font-size: 10px;
 }
 
 .about {
@@ -2403,7 +2485,6 @@ button.swiper-pagination-bullet {
   min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
-  padding-top: 16px;
 }
 
 .content-wrapper {
@@ -2411,11 +2492,13 @@ button.swiper-pagination-bullet {
   min-width: 300px;
   max-width: 1220px;
   margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 @media (min-width: 768px) {
   header {
-    height: 82px;
+    padding-top: 9px;
     padding-bottom: 22px;
   }
 
@@ -2445,6 +2528,8 @@ button.swiper-pagination-bullet {
   }
 
   .header__schedule-wrap {
+    display: -webkit-box;
+    display: flex;
     width: 117px;
     margin-right: 30px;
   }
@@ -2461,6 +2546,7 @@ button.swiper-pagination-bullet {
   }
 
   .header__buttons-wrap {
+    display: block;
     width: 135px;
   }
 
@@ -2472,6 +2558,7 @@ button.swiper-pagination-bullet {
   }
 
   .header__contact-wrap {
+    display: block;
     width: 135px;
     padding-bottom: 0px;
   }
@@ -2484,7 +2571,13 @@ button.swiper-pagination-bullet {
     line-height: 20px;
   }
 
+  .header__menu-button {
+    display: none;
+  }
+
   .header__nav-wrap {
+    display: -webkit-box;
+    display: flex;
     bottom: -45px;
     border-radius: 5px 5px 10px 10px;
     padding-right: 48px;
@@ -2501,13 +2594,21 @@ button.swiper-pagination-bullet {
     padding-bottom: 64px;
   }
 
+  .banner__content-wrap {
+    -webkit-box-align: start;
+            align-items: flex-start;
+  }
+
   .banner__title {
+    width: 50%;
+    text-align: left;
     font-size: 44px;
     line-height: 50px;
     margin-bottom: 20px;
   }
 
   .banner__subtitle {
+    text-align: left;
     font-size: 18px;
     margin-bottom: 27px;
   }
@@ -2530,8 +2631,11 @@ button.swiper-pagination-bullet {
   }
 
   .how-we-work__img-list {
-    padding-right: 17px;
-    padding-left: 17px;
+    flex-wrap: nowrap;
+  }
+
+  .how-we-work__item-img {
+    width: 15.66666666%;
   }
 
   .how-we-work__item-img:nth-child(odd) .img-wrap::after,
@@ -2541,16 +2645,19 @@ button.swiper-pagination-bullet {
     height: 13px;
   }
 
+  .how-we-work__item-img:nth-child(3) .img-wrap::after {
+    display: block;
+  }
+
   .how-we-work__item-img .img-wrap {
     width: 57px;
     height: 57px;
+    margin-bottom: 20px;
   }
 
   .how-we-work__img-description {
-    width: 112px;
     font-size: 12px;
     top: 66px;
-    left: -30px;
   }
 
   .about {
@@ -2619,6 +2726,7 @@ button.swiper-pagination-bullet {
     height: 42px;
     font-size: 14px;
     line-height: 40px;
+    padding-left: 15px;
   }
 
   .catalog__content {
@@ -2952,20 +3060,24 @@ button.swiper-pagination-bullet {
   .footer__inst-wrap {
     width: 21px;
     height: 21px;
+    border-radius: 3px;
   }
 
-  .main-wrapper {
-    padding-top: 9px;
+  .footer__fb-link img,
+  .footer__vk-link img,
+  .footer__inst-link img {
+    border-radius: 3px;
   }
 
   .content-wrapper {
+    padding: 0;
     max-width: 728px;
   }
 }
 
 @media (min-width: 1280px) {
   header {
-    height: 147px;
+    padding-top: 16px;
     padding-bottom: 40px;
   }
 
@@ -3094,8 +3206,6 @@ button.swiper-pagination-bullet {
 
   .how-we-work__img-description {
     top: 120px;
-    left: -50px;
-    width: 200px;
     font-size: 20px;
   }
 
@@ -3496,6 +3606,13 @@ button.swiper-pagination-bullet {
   .footer__inst-wrap {
     width: 36px;
     height: 36px;
+    border-radius: 5px;
+  }
+
+  .footer__fb-link img,
+  .footer__vk-link img,
+  .footer__inst-link img {
+    border-radius: 5px;
   }
 
   .content-wrapper {

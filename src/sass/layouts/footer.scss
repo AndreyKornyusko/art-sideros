@@ -105,10 +105,12 @@ footer {
   @media (min-width: 768px) {
     width: 21px;
     height: 21px;
+    border-radius: 3px;
   }
   @media (min-width: 1280px) {
     width: 36px;
     height: 36px;
+    border-radius: 5px;
   }
 }
 
@@ -124,4 +126,10 @@ footer {
 .footer__inst-link img {
   width: 100%;
   height: auto;
+  @media (min-width: 768px) {
+    border-radius: 3px;
+  }
+  @media (min-width: 1280px) {
+    border-radius: 5px;
+  }
 }

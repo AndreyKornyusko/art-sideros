@@ -3,6 +3,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 45px;
+  padding-bottom: 64px;
+
   @media (min-width: 768px) {
     padding-top: 96px;
     padding-bottom: 64px;
@@ -15,14 +18,28 @@
 
 }
 
+.banner__content-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
+
+}
+
 .banner__title {
-  width: 50%;
   font-family: 'MuseoSansCyrlW03-700';
   font-weight: 700;
   color: rgb(254, 254, 254);
   text-transform: uppercase;
-  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  text-align: center;
   @media (min-width: 768px) {
+    width: 50%;
+    text-align: left;
     font-size: 44px;
     line-height: 50px;
     margin-bottom: 20px;
@@ -40,7 +57,12 @@
   font-family: 'MuseoSansCyrlW03-300';
   font-weight: 300;
   color: rgb(254, 254, 254);
+  font-size: 12px;
+  margin-bottom: 18px;
+  text-align: center;
+
   @media (min-width: 768px) {
+    text-align: left;
     font-size: 18px;
     margin-bottom: 27px;
   }
@@ -54,6 +76,8 @@
 }
 
 .banner__button {
+  width: 160px;
+  height: 33px;
   border-radius: 8px;
   border: transparent;
   cursor: pointer;
@@ -67,6 +91,8 @@
   font-weight: 900;
   text-transform: uppercase;
   border: transparent;
+  font-size: 11px;
+margin: 0 auto;
   &:active {
     outline: none;
   }

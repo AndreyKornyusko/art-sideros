@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Арт-сидерос</title>
-    <link rel="stylesheet" href="./css/styles.css?t=1581082148470" />
+    <link rel="stylesheet" href="./css/styles.css?t=1581096779916" />
     <!-- <script
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
       type="text/javascript"
@@ -56,6 +56,7 @@
                 zakaz@domen.ru</a
               >
             </div>
+            <button class="header__menu-button"></button>
           </div>
           <div class="header__nav-wrap">
             <nav class="header__nav">
@@ -89,13 +90,14 @@
       </header>
       <div class="banner">
         <div class="content-wrapper">
-          <div class="banner__content-wrap"></div>
-          <h1 class="banner__title">
-            изготавливаем изделия <br />
-            из металла
-          </h1>
-          <h3 class="banner__subtitle">Любой сложности, по Вашему эскизу</h3>
-          <button class="banner__button">оставить заявку</button>
+          <div class="banner__content-wrap">
+            <h1 class="banner__title">
+              изготавливаем изделия <br />
+              из металла
+            </h1>
+            <h3 class="banner__subtitle">Любой сложности, по Вашему эскизу</h3>
+            <button class="banner__button">оставить заявку</button>
+          </div>
         </div>
       </div>
       <main>
@@ -532,7 +534,9 @@
                           class="delivery__img"
                         />
                       </div>
-                      <div class="delivery__arrow delivery__tab delivery__is-active delivery__tab-1"></div>
+                      <div
+                        class="delivery__arrow delivery__tab delivery__is-active delivery__tab-1"
+                      ></div>
                     </div>
                     <div class="delivery__item-text">оплата</div>
                   </li>
@@ -540,32 +544,36 @@
                     class="delivery__item delivery__tabs-nav-item"
                     data-tab-name="delivery__tab-2"
                   >
-                  <div class="delivery__main-img-wrap">
-                    <div class="delivery__img-wrap">
-                      <img
-                        src="./images/truck.png"
-                        alt="картинка"
-                        class="delivery__img"
-                      />
+                    <div class="delivery__main-img-wrap">
+                      <div class="delivery__img-wrap">
+                        <img
+                          src="./images/truck.png"
+                          alt="картинка"
+                          class="delivery__img"
+                        />
+                      </div>
+                      <div
+                        class="delivery__arrow delivery__tab  delivery__tab-2"
+                      ></div>
                     </div>
-                    <div class="delivery__arrow delivery__tab  delivery__tab-2"></div>
-                  </div>
                     <div class="delivery__item-text">доставка</div>
                   </li>
                   <li
                     class="delivery__item delivery__tabs-nav-item"
                     data-tab-name="delivery__tab-3"
                   >
-                  <div class="delivery__main-img-wrap">
-                    <div class="delivery__img-wrap">
-                      <img
-                        src="./images/gears.png"
-                        alt="картинка"
-                        class="delivery__img"
-                      />
+                    <div class="delivery__main-img-wrap">
+                      <div class="delivery__img-wrap">
+                        <img
+                          src="./images/gears.png"
+                          alt="картинка"
+                          class="delivery__img"
+                        />
+                      </div>
+                      <div
+                        class="delivery__arrow delivery__tab  delivery__tab-3"
+                      ></div>
                     </div>
-                    <div class="delivery__arrow delivery__tab  delivery__tab-3"></div>
-                  </div>
                     <div class="delivery__item-text">монтаж</div>
                   </li>
                 </ul>
@@ -831,7 +839,7 @@
     </div>
 
     <!-- Swiper JS -->
-    <script src="./js/scripts.js?t=1581082148470"></script>
+    <script src="./js/scripts.js?t=1581096779916"></script>
 
     <script>
       var swiper = new Swiper('.s1', {

@@ -5,6 +5,8 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
+  font-size: 14px;
+  margin-bottom: 17px;
   @media (min-width: 768px) {
     font-size: 18px;
     margin-bottom: 26px;
@@ -16,6 +18,9 @@
 }
 
 .how-we-work {
+  padding-top: 25px;
+  padding-bottom: 36px;
+
   @media (min-width: 768px) {
     padding-top: 45px;
     padding-bottom: 36px;
@@ -28,14 +33,16 @@
 
 .how-we-work__img-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 0;
   @media (min-width: 768px) {
-    padding-right: 17px;
-    padding-left: 17px;
+    flex-wrap: nowrap;
+
+    // padding-right: 17px;
+    // padding-left: 17px;
   }
   @media (min-width: 1280px) {
     margin: 0 auto;
@@ -46,6 +53,11 @@
 .how-we-work__item-img {
   position: relative;
   list-style: none;
+  width: 25.33333333%;
+  margin-bottom: 23px;
+  @media (min-width: 768px) {
+    width: 15.66666666%;
+  }
 }
 
 .how-we-work__item-img:nth-child(odd) .img-wrap::after,
@@ -53,6 +65,10 @@
   position: absolute;
   content: '';
   right: -90%;
+  top: 20px;
+  width: 30px;
+  height: 12px;
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -82,13 +98,23 @@
   visibility: hidden;
 }
 
+.how-we-work__item-img:nth-child(3) .img-wrap::after {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
 .how-we-work__item-img .img-wrap {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 13px;
   @media (min-width: 768px) {
     width: 57px;
     height: 57px;
+    margin-bottom: 20px;
   }
   @media (min-width: 1280px) {
     width: 100px;
@@ -104,21 +130,23 @@
 
 .how-we-work__img-description {
   position: absolute;
+  top: 58px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
   margin: 0 auto;
   text-align: center;
   font-family: 'MuseoSansCyrlW03-500';
   font-weight: 500;
   color: rgb(0, 0, 0);
+  font-size: 10px;
   @media (min-width: 768px) {
-    width: 112px;
     font-size: 12px;
     top: 66px;
-    left: -30px;
   }
   @media (min-width: 1280px) {
     top: 120px;
-    left: -50px;
-    width: 200px;
     font-size: 20px;
   }
 }
@@ -391,6 +419,7 @@
     height: 42px;
     font-size: 14px;
     line-height: 40px;
+    padding-left: 15px;
   }
   @media (min-width: 1280px) {
     width: 290px;

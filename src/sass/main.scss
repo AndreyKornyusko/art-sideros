@@ -13,10 +13,6 @@
   min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
-  padding-top: 16px;
-  @media (min-width: 768px) {
-    padding-top: 9px;
-  }
 }
 
 .content-wrapper {
@@ -24,10 +20,13 @@
   min-width: 300px;
   max-width: 1220px;
   margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
   @media (min-width: 768px) {
+    padding: 0;
     max-width: 728px;
   }
-
 
   @media (min-width: 1280px) {
     max-width: 1220px;
