@@ -1,12 +1,17 @@
 header {
   position: relative;
   width: 100%;
-  padding-bottom: 40px;
-  height: 147px;
   @media (min-width: 768px) {
     height: 82px;
     padding-bottom: 22px;
   }
+  @media (min-width: 1280px) {
+    height: 147px;
+    padding-bottom: 40px;
+  }
+}
+.header__content-wrap {
+  position: relative;
 }
 
 .header__main-content-wrap {
@@ -18,9 +23,11 @@ header {
 
 .header__logo-wrap {
   position: relative;
-  margin-right: 110px;
   @media (min-width: 768px) {
     margin-right: 80px;
+  }
+  @media (min-width: 1280px) {
+    margin-right: 110px;
   }
 }
 
@@ -33,11 +40,7 @@ header {
 
 .header__logo-art {
   position: absolute;
-  top: -16px;
-  left: -26px;
   display: block;
-  width: 69px;
-  height: 35px;
   background-image: url(../../images/арт.png);
   background-position: center;
   background-size: contain;
@@ -52,6 +55,12 @@ header {
     height: 20px;
     top: -9px;
     left: 0px;
+  }
+  @media (min-width: 1280px) {
+    top: -16px;
+    left: -26px;
+    width: 69px;
+    height: 35px;  
   }
 }
 
@@ -73,26 +82,30 @@ header {
   @media (min-width: 768px) {
     padding-left: 14px;
   }
+  @media (min-width: 1280px) {
+  }
 }
 
 .header__logo-sideros {
   display: block;
-  font-size: 60px;
   margin: 0;
   padding: 0;
   @media (min-width: 768px) {
     padding-left: 14px;
+    font-size: 35px;
   }
 
-  @media (min-width: 768px) {
-    font-size: 35px;
+  @media (min-width: 1280px) {
+    font-size: 60px;
   }
 }
 
 .header__logo-make {
-  font-size: 12px;
   @media (min-width: 768px) {
     font-size: 7px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 12px;
   }
 }
 
@@ -100,22 +113,26 @@ header {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  width: 195px;
   padding-bottom: 5px;
   @media (min-width: 768px) {
     width: 117px;
     margin-right: 30px;
   }
+  @media (min-width: 1280px) {
+    width: 195px;
+  }
 }
 
 .header__shedule-img-wrap {
-  width: 50px;
-  height: 50px;
-  margin-right: 7px;
   @media (min-width: 768px) {
     width: 30px;
     height: 30px;
     margin-right: 3px;
+  }
+  @media (min-width: 1280px) {
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
   }
 }
 
@@ -125,8 +142,6 @@ header {
 }
 
 .header__shedule-text {
-  width: 140px;
-  font-size: 24px;
   font-family: 'MuseoSansCyrlW03-700';
   font-weight: 700;
   color: rgb(0, 0, 0);
@@ -136,12 +151,18 @@ header {
     width: 80px;
     font-size: 14px;
   }
+  @media (min-width: 1280px) {
+    width: 140px;
+    font-size: 24px;
+  }
 }
 
 .header__buttons-wrap {
-  width: 200px;
   @media (min-width: 768px) {
     width: 135px;
+  }
+  @media (min-width: 1280px) {
+    width: 200px;
   }
 }
 
@@ -153,10 +174,6 @@ header {
     $main-light-blue-color 0%,
     $main-dark-blue-color 100%
   );
-  width: 229px;
-  height: 46px;
-  margin-bottom: 10px;
-  font-size: 16px;
   font-family: 'MuseoSansCyrlW03-900';
   font-weight: 900;
   color: rgb(255, 255, 255);
@@ -193,16 +210,27 @@ header {
     font-size: 11px;
     margin-bottom: 5px;
   }
+  @media (min-width: 1280px) {
+    width: 229px;
+    height: 46px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 }
 
 .header__contact-wrap {
-  width: 230px;
   text-align: right;
+
   margin-left: 35px;
-  padding-bottom: 15px;
   @media (min-width: 768px) {
     width: 135px;
     padding-bottom: 0px;
+  }
+  @media (min-width: 1280px) {
+    width: 230px;
+    margin-left: 35px;
+    padding-bottom: 15px;
+  
   }
 }
 
@@ -210,13 +238,15 @@ header {
 .header__contact-wrap-span,
 .header__contact-wrap-call,
 .header__contact-wrap-email {
-  font-size: 24px;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  line-height: 32px;
   @media (min-width: 768px) {
     font-size: 14px;
     line-height: 20px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -238,31 +268,36 @@ header {
 
 .header__nav-wrap {
   position: absolute;
-  bottom: -50px;
+  width: 99%;
+  right: 0;
+  left: 0;
   clip-path: polygon(0% 0%, 100% 0%, 99.5% 100%, 0.5% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 80px;
-  padding-left: 80px;
   margin: 0 auto;
-  border-radius: 10px 10px 15px 15px;
   background-image: linear-gradient(
     to top,
     $main-light-orange-color 0%,
     $main-dark-orange-color 59%
   );
-  width: 1232px;
+
   background-color: #fff;
   box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.23);
   z-index: 100;
 
   @media (min-width: 768px) {
-    bottom: -27px;
-    width: 722px;
+    bottom: -45px;
     border-radius: 5px 5px 10px 10px;
     padding-right: 48px;
     padding-left: 48px;
+  }
+  @media (min-width: 1280px) {
+    bottom: -80px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 10px 10px 15px 15px;
+
   }
 }
 
@@ -290,8 +325,6 @@ header {
 }
 
 .header__list-link {
-  line-height: 66px;
-  font-size: 24px;
   font-family: 'MuseoSansCyrlW03-500';
   font-weight: 500;
   color: rgb(255, 254, 254);
@@ -304,5 +337,10 @@ header {
   @media (min-width: 768px) {
     line-height: 40px;
     font-size: 14px;
+  }
+  @media (min-width: 1280px) {
+    line-height: 66px;
+    font-size: 24px;
+  
   }
 }

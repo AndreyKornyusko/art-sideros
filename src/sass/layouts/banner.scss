@@ -1,6 +1,4 @@
 .banner {
-  padding-top: 175px;
-  padding-bottom: 190px;
   background-image: url(../../images/banner.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -9,36 +7,50 @@
     padding-top: 96px;
     padding-bottom: 64px;
   }
+  @media (min-width: 1280px) {
+    padding-top: 175px;
+    padding-bottom: 190px;
+  
+  }
+
 }
 
 .banner__title {
   width: 50%;
-  font-size: 75px;
   font-family: 'MuseoSansCyrlW03-700';
   font-weight: 700;
   color: rgb(254, 254, 254);
   text-transform: uppercase;
-  line-height: 85px;
   text-align: left;
-  margin-bottom: 30px;
   @media (min-width: 768px) {
     font-size: 44px;
     line-height: 50px;
     margin-bottom: 20px;
   }
+  @media (min-width: 1280px) {
+    font-size: 75px;
+    line-height: 85px;
+    margin-bottom: 30px;
+
+  }
+
 }
 
 .banner__subtitle {
-  font-size: 30px;
   font-family: 'MuseoSansCyrlW03-300';
   font-weight: 300;
   color: rgb(254, 254, 254);
-  line-height: 1.2;
-  margin-bottom: 48px;
   @media (min-width: 768px) {
     font-size: 18px;
     margin-bottom: 27px;
   }
+  @media (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 48px;
+
+  }
+
 }
 
 .banner__button {
@@ -50,9 +62,6 @@
     $main-light-blue-color 0%,
     $main-dark-blue-color 100%
   );
-  width: 274px;
-  height: 55px;
-  font-size: 16px;
   font-family: 'MuseoSansCyrlW03-900';
   color: rgb(255, 255, 255);
   font-weight: 900;
@@ -87,4 +96,11 @@
     height: 33px;
     margin-bottom: 48px;
   }
+  @media (min-width: 1280px) {
+    width: 274px;
+    height: 55px;
+    font-size: 16px;
+  
+  }
+
 }
