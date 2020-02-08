@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Арт-сидерос</title>
-    <link rel="stylesheet" href="./css/styles.css?t=1581096779916" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- <script
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
       type="text/javascript"
@@ -189,12 +189,14 @@
                 </p>
                 <button class="about__button">подробнее</button>
               </div>
-              <div class="about__image-wrap">
-                <img
-                  src="./images/about.png"
-                  alt="картинка"
-                  class="about__image"
-                />
+              <div class="about__image-main-wrap">
+                <div class="about__image-wrap">
+                  <img
+                    src="./images/about.png"
+                    alt="картинка"
+                    class="about__image"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -226,6 +228,27 @@
             <div class="catalog__content-wrap">
               <div class="catalog__navbar">
                 <nav class="catalog__nav">
+                  <div class="catalog__select">
+                    <span class="catalog_selecte-span tab is-active tab-1"
+                      >Раздел первый</span
+                    ><span class="catalog__select-span tab tab-2"
+                      >Раздел второй</span
+                    ><span class="catalog__select-span tab tab-3"
+                      >Раздел третий</span
+                    ><span class="catalog__select-span tab tab-4"
+                      >Раздел четвертый</span
+                    ><span class="catalog__select-span tab tab-5"
+                      >Раздел пятый</span
+                    ><span class="catalog__select-span tab tab-6"
+                      >Раздел шестой</span
+                    ><span class="catalog__select-span tab tab-7"
+                      >Раздел седьмой</span
+                    ><span class="catalog__select-span tab tab-8"
+                      >Раздел восьмой</span
+                    ><span class="catalog__select-span tab tab-9"
+                      >Раздел девятый</span
+                    >
+                  </div>
                   <ul class="catalog__list">
                     <li
                       class="catalog__item tabs-nav__item is-active"
@@ -490,6 +513,9 @@
                             </div>
                           </div>
                         </div>
+                        <div
+                          class="swiper-pagination catalog__pagination"
+                        ></div>
                         <div class="swiper-button-next custom-next"></div>
                         <div class="swiper-button-prev custom-prev"></div>
                       </div>
@@ -839,7 +865,7 @@
     </div>
 
     <!-- Swiper JS -->
-    <script src="./js/scripts.js?t=1581096779916"></script>
+    <script src="./js/scripts.js"></script>
 
     <script>
       var swiper = new Swiper('.s1', {
@@ -904,6 +930,18 @@
       };
 
       tab();
+
+      let menuElem = document.querySelector('.catalog__list');
+      let selectElem = document.querySelector('.catalog__select');
+      let items = document.querySelectorAll('.catalog__item');
+
+      selectElem.onclick = function() {
+        menuElem.classList.toggle('open');
+      };
+
+      items.forEach(item => {
+        item.addEventListener('click', selectElem.onclick);
+      });
     </script>
     <script>
       let deliveryTab = function() {
