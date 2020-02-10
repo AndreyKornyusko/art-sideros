@@ -188,7 +188,12 @@
 .about__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .about__text-wrap {
@@ -604,10 +609,17 @@
 .catalog__slider-wrap {
   // position: relative;
   width: 320px;
-  // margin: 0 auto;
+  margin: 0 auto;
   // overflow: hidden;
   margin-bottom: 20px;
+  @media (min-width: 768px) {
+    width: 490px;
+  }
+  @media (min-width: 1280px) {
+    width: 825px;
+  }
 }
+
 .catalog__pagination {
   @media (min-width: 768px) {
     display: none;
@@ -1279,8 +1291,13 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .reviews__content::before {
@@ -1617,14 +1634,14 @@
   flex-direction: column;
   align-items: flex-start;
   width: 228px;
-  height: 64px;
+  height: 67px;
   margin-bottom: 20px;
   @media (min-width: 768px) {
     margin-bottom: 0;
   }
   @media (min-width: 1280px) {
     width: 360px;
-    height: 105px;
+    height: 110px;
   }
 }
 
@@ -1638,7 +1655,7 @@
 .questions__form-button {
   position: relative;
   font-size: 12px;
-  top: 7px;
+  top: 2px;
   width: 228px;
   height: 47px;
   border-radius: 8px;
@@ -1682,7 +1699,7 @@
     margin-bottom: 0;
   }
   @media (min-width: 1280px) {
-    top: 3px;
+    top: -2px;
     width: 360px;
     height: 73px;
     font-size: 16px;
@@ -1866,7 +1883,7 @@
   margin-bottom: 15px;
 
   @media (min-width: 768px) {
-    justify-content: flex-start;
+    align-items: flex-start;
     width: 32%;
     margin-bottom: 0;
   }
@@ -1914,15 +1931,20 @@
 .contacts__map {
   width: 320px;
   height: 220px;
+  margin: 0 auto;
   background-color: rgb(239, 243, 247);
+
   @media (min-width: 768px) {
     position: absolute;
-    top: -30px;
+    top: -80px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
     width: 490px;
     height: 125px;
   }
   @media (min-width: 1280px) {
-    top: -60px;
+    top: -145px;
     width: 826px;
     height: 220px;
   }
