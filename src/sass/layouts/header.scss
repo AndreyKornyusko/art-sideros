@@ -333,9 +333,10 @@ header {
 }
 
 .header__mobile-menu-wrap {
+  display: none;
+  position: absolute;
   right: 0;
   top: -10px;
-  position: absolute;
   width: 282px;
   background-color: #fff;
   z-index: 100;
@@ -346,8 +347,6 @@ header {
 }
 
 .header__mobile-menu {
-  // right: 0;
-  // top: 10px;
   position: relative;
   width: 282px;
   background-color: #fff;
