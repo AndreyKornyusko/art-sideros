@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Арт-сидерос</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script
+    <!-- <script
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
       type="text/javascript"
     ></script>
-    <script src="./js/yandex.js" type="text/javascript"></script>
+    <script src="./js/yandex.js" type="text/javascript"></script> -->
   </head>
 
   <body>
@@ -60,7 +60,10 @@
             <div id="popup-menu" class="header__mobile-menu-wrap">
               <div class="header__mobile-menu">
                 <div class="header__menu-button-wrap">
-                  <button id="close-button" class="header__menu-close-button"></button>
+                  <button
+                    id="close-button"
+                    class="header__menu-close-button"
+                  ></button>
                 </div>
                 <div class="header__menu-logo-wrap">
                   <a class="header__menu-logo-link" href="#">
@@ -81,7 +84,7 @@
                     >zakaz@domen.ru</a
                   >
                 </div>
-                <div  class="header__menu-nav-wrap">
+                <div class="header__menu-nav-wrap">
                   <nav class="header__menu-nav">
                     <ul class="header__menu-list">
                       <li class="header__menu-list-item">
@@ -158,69 +161,84 @@
               из металла
             </h1>
             <h3 class="banner__subtitle">Любой сложности, по Вашему эскизу</h3>
-            <button id="banner__button" class="banner__button">оставить заявку</button>
+            <button id="banner__button" class="banner__button">
+              оставить заявку
+            </button>
             <div id="banner__modal" class="banner__modal">
               <div class="banner__modal-content">
-                <h2 class="questions__section-title">
+                <div class="modal__close-button-wrap">
+                  <button
+                    id="modal-close-button"
+                    class="modal__close-button"
+                  ></button>
+                </div>
+
+                <h2 class="questions__section-title-banner-modal">
                   хотите задать вопрос или сделать заказ?
                 </h2>
-                <h3 class="questions__subtitle">
+                <h3 class="questions__subtitle-banner-modal">
                   Оставьте нам заявку, мы перезвоним вам в ближайшее время
                 </h3>
-                <form action="#" class="questions__form">
-                  <div class="questions__form-content-wrap">
-                    <div class="questions__form-input-mainwrap">
-                      <div class="questions__form-input-wrap">
-                        <span class="questions__form-description"
-                          >Ваше имя</span
-                        >
-                        <label class="banner-text-input" for="text-input">
-                          <input
-                            id="banner-text-input"
-                            type="text"
-                            class="questions__text-input"
-                          />
-                        </label>
+                <form action="#" class="questions__form-banner-modal">
+                  <div class="questions__form-content-wrap-banner-modal">
+                    <div class="questions__form-input-mainwrap-banner-modal">
+                      <div class="form-inputs-wrap">
+                        <div class="questions__form-input-wrap-banner-modal">
+                          <span class="questions__form-description-banner-modal"
+                            >Ваше имя</span
+                          >
+                          <label
+                            class="banner-text-input"
+                            for="banner-text-input"
+                          >
+                            <input
+                              id="banner-text-input"
+                              type="text"
+                              class="questions__text-input-banner-modal"
+                            />
+                          </label>
+                        </div>
+                        <div class="questions__form-input-wrap-banner-modal">
+                          <span class="questions__form-description-banner-modal"
+                            >Ваш телефон</span
+                          >
+                          <label
+                            class="banner-tel-input"
+                            for="banner-tel-input"
+                          >
+                            <input
+                              id="banner-tel-input"
+                              type="tel"
+                              class="questions__tel-input-banner-modal"
+                              placeholder="+79123456789"
+                            />
+                          </label>
+                        </div>
                       </div>
-                      <div class="questions__form-input-wrap">
-                        <span class="questions__form-description"
-                          >Ваш телефон</span
-                        >
-                        <label class="banner-tel-input" for="tel-input">
-                          <input
-                            id="banner-tel-input"
-                            type="tel"
-                            class="questions__tel-input"
-                            placeholder="+79123456789"
-                          />
-                        </label>
-                      </div>
-
                       <div class="banner__textarea-wrap">
-                        <span class="questions__form-description"
+                        <span class="questions__form-description-banner-modal"
                           >Комментарий</span
                         >
-                        <label class="banner-textarea-label" for="banner-textarea">
+                        <label
+                          class="banner-textarea-label"
+                          for="banner-textarea"
+                        >
                           <input
                             id="banner-textarea"
                             type="textarea"
                             class="banner__textarea"
-                            placeholder="Напишите Ваш комментарий здесь..."
-                            rows="10"
-                             cols="70"
+                            rows="20"
+                            cols="7"
+                            placeholder="Напишите Ваш &#10;комментарий здесь..."
                           />
                         </label>
                       </div>
 
-                      <div class="questions__form-button-wrap">
+                      <div class="questions__form-button-wrap-banner-modal">
                         <button class="banner__form-button">
                           отправить заявку
                         </button>
                       </div>
-                    </div>
-                    <div class="questions__form-comments">
-                      <sup>&#9913;</sup>Даю согласие на обработку персональных
-                      данных
                     </div>
                   </div>
                 </form>
@@ -1401,47 +1419,57 @@
       });
     </script>
     <script>
-      var modal = document.getElementById("popup-menu");
-      
-      var btn = document.getElementById("open-popup-button");
-      
-      var closebtn = document.getElementsByClassName("header__menu-close-button")[0];
-      
+      var modal = document.getElementById('popup-menu');
+
+      var btn = document.getElementById('open-popup-button');
+
+      var closebtn = document.getElementsByClassName(
+        'header__menu-close-button',
+      )[0];
+
       btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      
-        closebtn.onclick = function() {
-        modal.style.display = "none";
-      }
-      
+        modal.style.display = 'block';
+      };
+
+      closebtn.onclick = function() {
+        modal.style.display = 'none';
+      };
+
       window.onclick = function(event) {
         if (event.target == modal) {
-          modal.style.display = "none";
+          modal.style.display = 'none';
         }
-      }
-      </script>
-          <script>
-            var banerModal = document.getElementById("banner__modal");
-            
-            var banerBtn = document.getElementById("banner__button");
-            
-            var sendBanerBtn = document.getElementsByClassName("banner__form-button")[0];
-            
-            banerBtn.onclick = function() {
-              banerModal.style.display = "block";
-            }
-            
-              sendBanerBtn.onclick = function() {
-                banerModal.style.display = "none";
-            }
-            
-            window.onclick = function(event) {
-              if (event.target == banerModal) {
-                banerModal.style.display = "none";
-              }
-            }
-            </script>
-      
+      };
+    </script>
+    <script>
+      var banerModal = document.getElementById('banner__modal');
+
+      var banerBtn = document.getElementById('banner__button');
+
+      var sendBanerBtn = document.getElementsByClassName(
+        'banner__form-button',
+      )[0];
+      var closeModalBtn = document.getElementsByClassName(
+        'modal__close-button',
+      )[0];
+
+      banerBtn.onclick = function() {
+        banerModal.style.display = 'flex';
+      };
+
+      sendBanerBtn.onclick = function() {
+        banerModal.style.display = 'none';
+      };
+
+      closeModalBtn.onclick = function() {
+        banerModal.style.display = 'none';
+      };
+
+      window.onclick = function(event) {
+        if (event.target == banerModal) {
+          banerModal.style.display = 'none';
+        }
+      };
+    </script>
   </body>
 </html>
