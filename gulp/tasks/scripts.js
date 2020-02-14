@@ -12,7 +12,7 @@ const scripts = () => {
     .pipe(plumber())
     .pipe(babel())
     .pipe(concat('scripts.js'))
-    .pipe(mode.production(uglify()))
+    // .pipe(mode.production(uglify()))
     .pipe(gulp.dest(paths.build.js));
 };
 
