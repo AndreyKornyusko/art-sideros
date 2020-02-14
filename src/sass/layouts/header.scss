@@ -294,6 +294,19 @@ header {
   font-weight: 500;
 }
 
+.header__contact-wrap-call {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 .header__menu-button {
   position: relative;
   width: 30px;

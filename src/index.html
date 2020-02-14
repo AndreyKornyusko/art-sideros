@@ -40,15 +40,15 @@
               <div class="header__shedule-text">Ежедневно 8:00 - 18:00</div>
             </div>
             <div class="header__buttons-wrap">
-              <button class="header__button">Оставить заявку</button>
-              <button class="header__button">рассчитать заказ</button>
+              <button class="header__button request-button">Оставить заявку</button>
+              <button class="header__button calculate-button">рассчитать заказ</button>
             </div>
             <div class="header__contact-wrap">
               <a class="header__contact-wrap-tel" href="tel:+79090702348"
                 >+7 909 070-23-48</a
               >
               <span class="header__contact-wrap-span">или</span>
-              <a class="header__contact-wrap-call" href="#">Позвоните мне</a>
+              <button class="header__contact-wrap-call">Позвоните мне</button>
               <a
                 class="header__contact-wrap-email"
                 href="mailto:zakaz@domen.ru"
@@ -152,6 +152,172 @@
             </nav>
           </div>
         </div>
+
+        <div id="header-calculate__modal" class="header-calculate__modal">
+          <div class="banner__modal-content">
+            <div class="modal__close-button-wrap">
+              <button
+                id="header-calculate-close-button"
+                class="modal__close-button"
+              ></button>
+            </div>
+
+            <h2 class="questions__section-title-banner-modal">
+              хотите задать вопрос или сделать заказ?
+            </h2>
+            <h3 class="questions__subtitle-banner-modal">
+              Оставьте нам заявку, мы перезвоним вам в ближайшее время
+            </h3>
+            <form action="#" class="questions__form-banner-modal">
+              <div class="questions__form-content-wrap-banner-modal">
+                <div class="questions__form-input-mainwrap-banner-modal">
+                  <div class="form-inputs-wrap">
+                    <div class="questions__form-input-wrap-banner-modal">
+                      <span class="questions__form-description-banner-modal"
+                        >Ваше имя</span
+                      >
+                      <label
+                        class="banner-text-input"
+                        for="header-calculate-text-input"
+                      >
+                        <input
+                          id="header-calculate-text-input"
+                          type="text"
+                          class="questions__text-input-banner-modal"
+                        />
+                      </label>
+                    </div>
+                    <div class="questions__form-input-wrap-banner-modal">
+                      <span class="questions__form-description-banner-modal"
+                        >Ваш телефон</span
+                      >
+                      <label
+                        class="banner-tel-input"
+                        for="header-calculate-tel-input"
+                      >
+                        <input
+                          id="header-calculate-tel-input"
+                          type="tel"
+                          class="questions__tel-input-banner-modal"
+                          placeholder="+79123456789"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="banner__textarea-wrap">
+                    <span class="questions__form-description-banner-modal"
+                      >Комментарий</span
+                    >
+                    <label
+                      class="banner-textarea-label"
+                      for="header-calculate-textarea"
+                    >
+                      <input
+                        id="header-calculate-textarea"
+                        type="textarea"
+                        class="banner__textarea"
+                        rows="20"
+                        cols="7"
+                        placeholder="Напишите Ваш&#10;комментарий здесь..."
+                      />
+                    </label>
+                  </div>
+
+                  <div class="questions__form-button-wrap-banner-modal">
+                    <button class="header-calculate__form-button">
+                      отправить заявку
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+        <div id="header-call__modal" class="header-call__modal">
+          <div class="banner__modal-content">
+            <div class="modal__close-button-wrap">
+              <button
+                id="header-call-close-button"
+                class="modal__close-button"
+              ></button>
+            </div>
+
+            <h2 class="questions__section-title-banner-modal">
+              хотите задать вопрос или сделать заказ?
+            </h2>
+            <h3 class="questions__subtitle-banner-modal">
+              Оставьте нам заявку, мы перезвоним вам в ближайшее время
+            </h3>
+            <form action="#" class="questions__form-banner-modal">
+              <div class="questions__form-content-wrap-banner-modal">
+                <div class="questions__form-input-mainwrap-banner-modal">
+                  <div class="form-inputs-wrap">
+                    <div class="questions__form-input-wrap-banner-modal">
+                      <span class="questions__form-description-banner-modal"
+                        >Ваше имя</span
+                      >
+                      <label
+                        class="banner-text-input"
+                        for="header-call-text-input"
+                      >
+                        <input
+                          id="header-call-text-input"
+                          type="text"
+                          class="questions__text-input-banner-modal"
+                        />
+                      </label>
+                    </div>
+                    <div class="questions__form-input-wrap-banner-modal">
+                      <span class="questions__form-description-banner-modal"
+                        >Ваш телефон</span
+                      >
+                      <label
+                        class="banner-tel-input"
+                        for="header-call-tel-input"
+                      >
+                        <input
+                          id="header-call-tel-input"
+                          type="tel"
+                          class="questions__tel-input-banner-modal"
+                          placeholder="+79123456789"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="banner__textarea-wrap">
+                    <span class="questions__form-description-banner-modal"
+                      >Комментарий</span
+                    >
+                    <label
+                      class="banner-textarea-label"
+                      for="header-call-textarea"
+                    >
+                      <input
+                        id="header-call-textarea"
+                        type="textarea"
+                        class="banner__textarea"
+                        rows="20"
+                        cols="7"
+                        placeholder="Напишите Ваш&#10;комментарий здесь..."
+                      />
+                    </label>
+                  </div>
+
+                  <div class="questions__form-button-wrap-banner-modal">
+                    <button class="header-call__form-button">
+                      отправить заявку
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
       </header>
       <div class="banner">
         <div class="content-wrapper">
@@ -161,14 +327,14 @@
               из металла
             </h1>
             <h3 class="banner__subtitle">Любой сложности, по Вашему эскизу</h3>
-            <button id="banner__button" class="banner__button">
+            <button id="banner__button" class="banner__button request-button">
               оставить заявку
             </button>
             <div id="banner__modal" class="banner__modal">
               <div class="banner__modal-content">
                 <div class="modal__close-button-wrap">
                   <button
-                    id="modal-close-button"
+                    id="banner__modal-close-button"
                     class="modal__close-button"
                   ></button>
                 </div>
@@ -255,66 +421,80 @@
             </h2>
             <ul class="how-we-work__img-list">
               <li class="how-we-work__item-img">
-                <div class="img-wrap">
-                  <img
-                    src="./images/002-graphic-tool.png"
-                    alt="Иконка шага"
-                    class="how-we-work__img"
-                  />
-                </div>
-                <div class="how-we-work__img-description">Заказ и замеры</div>
+                <a class="how-we-work__link" href="#">
+                  <div class="img-wrap">
+                    <img
+                      src="./images/002-graphic-tool.png"
+                      alt="Иконка шага"
+                      class="how-we-work__img"
+                    />
+                  </div>
+                  <div class="how-we-work__img-description">Заказ и замеры</div>
+                </a>
               </li>
               <li class="how-we-work__item-img">
-                <div class="img-wrap">
-                  <img
-                    src="./images/001-car.png"
-                    alt="Иконка шага"
-                    class="how-we-work__img"
-                  />
-                </div>
-                <div class="how-we-work__img-description">Выезд</div>
+                <a class="how-we-work__link" href="#">
+                  <div class="img-wrap">
+                    <img
+                      src="./images/001-car.png"
+                      alt="Иконка шага"
+                      class="how-we-work__img"
+                    />
+                  </div>
+                  <div class="how-we-work__img-description">Выезд</div>
+                </a>
               </li>
               <li class="how-we-work__item-img">
-                <div class="img-wrap">
-                  <img
-                    src="./images/003-handshake.png"
-                    alt="Иконка шага"
-                    class="how-we-work__img"
-                  />
-                </div>
-                <div class="how-we-work__img-description">Договор и оплата</div>
+                <a class="how-we-work__link" href="#">
+                  <div class="img-wrap">
+                    <img
+                      src="./images/003-handshake.png"
+                      alt="Иконка шага"
+                      class="how-we-work__img"
+                    />
+                  </div>
+                  <div class="how-we-work__img-description">
+                    Договор и оплата
+                  </div>
+                </a>
               </li>
               <li class="how-we-work__item-img">
-                <div class="img-wrap">
-                  <img
-                    src="./images/004-sketch.png"
-                    alt="Иконка шага"
-                    class="how-we-work__img"
-                  />
-                </div>
-                <div class="how-we-work__img-description">Дизайн-проект</div>
+                <a class="how-we-work__link" href="#">
+                  <div class="img-wrap">
+                    <img
+                      src="./images/004-sketch.png"
+                      alt="Иконка шага"
+                      class="how-we-work__img"
+                    />
+                  </div>
+                  <div class="how-we-work__img-description">Дизайн-проект</div>
+                </a>
               </li>
               <li class="how-we-work__item-img">
-                <div class="img-wrap">
-                  <img
-                    src="./images/005-gear.png"
-                    alt="Иконка шага"
-                    class="how-we-work__img"
-                  />
-                </div>
-                <div class="how-we-work__img-description">Изготовление</div>
+                <a class="how-we-work__link" href="#">
+                  <div class="img-wrap">
+                    <img
+                      src="./images/005-gear.png"
+                      alt="Иконка шага"
+                      class="how-we-work__img"
+                    />
+                  </div>
+                  <div class="how-we-work__img-description">Изготовление</div>
+                </a>
               </li>
               <li class="how-we-work__item-img">
-                <div class="img-wrap">
-                  <img
-                    src="./images/006-teamwork.png"
-                    alt="Иконка шага"
-                    class="how-we-work__img"
-                  />
-                </div>
-                <div class="how-we-work__img-description">
-                  Доставка и монтаж
-                </div>
+                <a class="how-we-work__link" href="#">
+                  <div class="img-wrap">
+                    <img
+                      src="./images/006-teamwork.png"
+                      alt="Иконка шага"
+                      class="how-we-work__img"
+                    />
+                  </div>
+                  <div class="how-we-work__img-description">
+                    Доставка и монтаж
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
@@ -983,6 +1163,88 @@
                 оставить отзыв
               </button>
             </div>
+
+            <div id="reviews__modal" class="reviews__modal">
+              <div class="banner__modal-content">
+                <div class="modal__close-button-wrap">
+                  <button
+                    id="reviews-close-button"
+                    class="modal__close-button"
+                  ></button>
+                </div>
+    
+                <h2 class="questions__section-title-banner-modal">
+                  хотите задать вопрос или сделать заказ?
+                </h2>
+                <h3 class="questions__subtitle-banner-modal">
+                  Оставьте нам заявку, мы перезвоним вам в ближайшее время
+                </h3>
+                <form action="#" class="questions__form-banner-modal">
+                  <div class="questions__form-content-wrap-banner-modal">
+                    <div class="questions__form-input-mainwrap-banner-modal">
+                      <div class="form-inputs-wrap">
+                        <div class="questions__form-input-wrap-banner-modal">
+                          <span class="questions__form-description-banner-modal"
+                            >Ваше имя</span
+                          >
+                          <label
+                            class="banner-text-input"
+                            for="reviews-text-input"
+                          >
+                            <input
+                              id="reviews-text-input"
+                              type="text"
+                              class="questions__text-input-banner-modal"
+                            />
+                          </label>
+                        </div>
+                        <div class="questions__form-input-wrap-banner-modal">
+                          <span class="questions__form-description-banner-modal"
+                            >Ваш телефон</span
+                          >
+                          <label
+                            class="banner-tel-input"
+                            for="reviews-tel-input"
+                          >
+                            <input
+                              id="reviews-tel-input"
+                              type="tel"
+                              class="questions__tel-input-banner-modal"
+                              placeholder="+79123456789"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="banner__textarea-wrap">
+                        <span class="questions__form-description-banner-modal"
+                          >Комментарий</span
+                        >
+                        <label
+                          class="banner-textarea-label"
+                          for="reviews-textarea"
+                        >
+                          <input
+                            id="reviews-textarea"
+                            type="textarea"
+                            class="banner__textarea"
+                            rows="20"
+                            cols="7"
+                            placeholder="Напишите Ваш&#10;комментарий здесь..."
+                          />
+                        </label>
+                      </div>
+    
+                      <div class="questions__form-button-wrap-banner-modal">
+                        <button class="reviews__form-button">
+                          отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>    
+
             <div class="reviews__content">
               <div class="reviews__mobile-content">
                 <div class="swiper-container reviews__mobile-swiper-container">
@@ -1256,6 +1518,23 @@
         slidesPerView: 3,
         spaceBetween: 10,
         slidesPerGroup: 3,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1.5,
+            spaceBetween: 5,
+            centeredSlides: true,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+
+        },
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
@@ -1443,28 +1722,60 @@
     </script>
     <script>
       var banerModal = document.getElementById('banner__modal');
+      var headerCalculateModal = document.getElementById('header-calculate__modal');
+      var headerCallModal = document.getElementById('header-call__modal');
+      var reviewsModal = document.getElementById('reviews__modal');
 
       var banerBtn = document.getElementById('banner__button');
+      var headerRequestBtn = document.querySelector('.request-button');
+      var headerCalculateBtn = document.querySelector('.calculate-button');
+      var headerCallBtn = document.querySelector('.header__contact-wrap-call');
+      var reviewsBtn = document.querySelector('.reviews__leave-review-button');
 
+      
+      
       var sendBanerBtn = document.getElementsByClassName(
         'banner__form-button',
       )[0];
-      var closeModalBtn = document.getElementsByClassName(
-        'modal__close-button',
+      var closeBannerModalBtn = document.getElementById(
+        'banner__modal-close-button',
       )[0];
+      var closeHeaderCalculateModalBtn = document.getElementById(
+        'header-calculate-close-button',
+      );
 
+      
       banerBtn.onclick = function() {
         banerModal.style.display = 'flex';
       };
+      headerRequestBtn.onclick = function() {
+        banerModal.style.display = 'flex';
+      };
+
+      headerCalculateBtn.onclick = function() {
+        headerCalculateModal.style.display = 'flex';
+      };
+
+      headerCallBtn.onclick = function() {
+        headerCallModal.style.display = 'flex';
+      };
+
+      reviewsBtn.onclick = function() {
+        reviewsModal.style.display = 'flex';
+      };
+
+      
 
       sendBanerBtn.onclick = function() {
         banerModal.style.display = 'none';
       };
 
-      closeModalBtn.onclick = function() {
+      closeBannerModalBtn.onclick = function() {
         banerModal.style.display = 'none';
       };
-
+      closeHeaderCalculateModalBtn.onclick = function() {
+        headerCalculateModal.style.display = 'none';
+      };
       window.onclick = function(event) {
         if (event.target == banerModal) {
           banerModal.style.display = 'none';

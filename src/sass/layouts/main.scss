@@ -138,6 +138,7 @@
   font-weight: 500;
   color: rgb(0, 0, 0);
   font-size: 10px;
+  text-decoration: none;
   @media (min-width: 768px) {
     font-size: 12px;
     top: 66px;
@@ -298,7 +299,7 @@
 }
 
 .about__button {
-  display: block;
+  display: none;
   border-radius: 8px;
   width: 164px;
   height: 34px;
@@ -486,17 +487,23 @@
   position: absolute;
   display: none;
   top: 45px;
+  height: 280px;
   padding: 0;
   margin: 0;
   z-index: 10;
   background-color: #fff;
   box-shadow: 0px 8px 9.8px 0.2px rgba(0, 0, 0, 0.3);
+  overflow: scroll;
   @media (min-width: 768px) {
+    height: 370px;
     top: 0;
     box-shadow: none;
     position: relative;
-
     display: block;
+  }
+
+  @media (min-width: 1280px) {
+    height: 632px;
   }
 }
 
@@ -871,6 +878,7 @@
 }
 
 .catalog__show-more-button {
+  display: none;
   border: none;
   background-color: #fff;
   font-family: 'MuseoSansCyrlW03-900';

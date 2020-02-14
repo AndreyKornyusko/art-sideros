@@ -123,7 +123,11 @@
   }
 }
 
-.banner__modal {
+.banner__modal,
+.header-calculate__modal,
+.header-call__modal,
+.reviews__modal
+ {
   display: none;
   position: fixed;
   justify-content: center;
@@ -420,7 +424,11 @@
   }
 }
 
-.banner__form-button {
+.banner__form-button,
+.header-calculate__form-button,
+.header-call__form-button,
+.reviews__form-button
+ {
   position: relative;
   font-size: 12px;
   top: 2px;
